@@ -2,15 +2,14 @@
 #include <getopt.h>
 #include <libgen.h>
 
+#include <gmp.h>
+
 int
 main(
     int   argc,
     char *argv[]
 ) {
-    app_t *app;
-
     progname = basename(argv[0]);
-
 
     bool run_ok = true;
 

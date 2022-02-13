@@ -110,9 +110,11 @@ am__objects_1 = src/globals.$(OBJEXT)
 am_dec2fact_OBJECTS = $(am__objects_1) src/dec2fact.$(OBJEXT)
 dec2fact_OBJECTS = $(am_dec2fact_OBJECTS)
 dec2fact_LDADD = $(LDADD)
+dec2fact_DEPENDENCIES =
 am_fact2dec_OBJECTS = $(am__objects_1) src/fact2dec.$(OBJEXT)
 fact2dec_OBJECTS = $(am_fact2dec_OBJECTS)
 fact2dec_LDADD = $(LDADD)
+fact2dec_DEPENDENCIES =
 AM_V_P = $(am__v_P_@AM_V@)
 am__v_P_ = $(am__v_P_@AM_DEFAULT_V@)
 am__v_P_0 = false
@@ -295,6 +297,7 @@ AM_CPPFLAGS = -Wall -Wextra
 EXTRA_DIST = \
 	README.m4
 
+LDADD = -lgmp
 COMMON_SRC = \
 	src/globals.c \
 	src/common.h

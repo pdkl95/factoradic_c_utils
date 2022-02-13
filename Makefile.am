@@ -5,6 +5,8 @@ AM_CPPFLAGS = -Wall -Wextra
 EXTRA_DIST = \
 	README.m4
 
+LDADD = -lgmp
+
 bin_PROGRAMS = dec2fact fact2dec
 
 COMMON_SRC = \
