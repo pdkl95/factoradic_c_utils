@@ -54,7 +54,7 @@ convert_factoradic_string(
         }
 
         if (endptr == token) {
-            fprintf(stderr, "No digits were found\n");
+            fprintf(stderr, "ERROR: o digits were found\n");
             rv = false;
             goto cleanup;
         }
