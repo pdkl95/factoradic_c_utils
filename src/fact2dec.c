@@ -15,12 +15,18 @@ convert_factoradic_string(
     char *factoradic_string
 ) {
     bool rv = true;
+
     char *tmpstr = NULL;
     char *token = NULL;
     char *endptr = NULL;
-    size_t num_places = 0;
+
+    int num_places = 0;
     long *place_values = NULL;
     long *p = NULL;
+
+    mpz_t total, fact;
+    mpz_init(total);
+    mpz_init(fact);
 
     /* first count the number of split place values */
     tmpstr = strdup(factoradic_string);
@@ -59,9 +65,22 @@ convert_factoradic_string(
         token = strtok(NULL, delim);
     }
 
+    for (int i = 0; i < num_places; i++) {
+        /* places are in rever-index order */
+        int idx = num_places - i - 1;
+        mpz_fac_ui(fact, (unsigned long)i);
+        mpz_addmul_ui(total, fact, (unsigned long)place_values[idx]);
+    }
+
+    mpz_out_str(stdout, 10, total);
+    fprintf(stdout, "\n");
+
   cleanup:
     free(place_values);
     free(tmpstr);
+
+    mpz_clear(fact);
+    mpz_clear(total);
 
     return rv;
 }
