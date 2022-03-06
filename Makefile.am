@@ -10,6 +10,7 @@ LDADD = -lgmp
 bin_PROGRAMS = dec2fact fact2dec
 
 COMMON_SRC = \
+	src/options.c options.h \
 	src/globals.c \
 	src/common.h
 

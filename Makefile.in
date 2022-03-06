@@ -106,7 +106,7 @@ CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
 am__dirstamp = $(am__leading_dot)dirstamp
-am__objects_1 = src/globals.$(OBJEXT)
+am__objects_1 = src/options.$(OBJEXT) src/globals.$(OBJEXT)
 am_dec2fact_OBJECTS = $(am__objects_1) src/dec2fact.$(OBJEXT)
 dec2fact_OBJECTS = $(am_dec2fact_OBJECTS)
 dec2fact_LDADD = $(LDADD)
@@ -299,6 +299,7 @@ EXTRA_DIST = \
 
 LDADD = -lgmp
 COMMON_SRC = \
+	src/options.c options.h \
 	src/globals.c \
 	src/common.h
 
@@ -411,6 +412,8 @@ src/$(am__dirstamp):
 src/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) src/$(DEPDIR)
 	@: > src/$(DEPDIR)/$(am__dirstamp)
+src/options.$(OBJEXT): src/$(am__dirstamp) \
+	src/$(DEPDIR)/$(am__dirstamp)
 src/globals.$(OBJEXT): src/$(am__dirstamp) \
 	src/$(DEPDIR)/$(am__dirstamp)
 src/dec2fact.$(OBJEXT): src/$(am__dirstamp) \
@@ -436,6 +439,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@src/$(DEPDIR)/dec2fact.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@src/$(DEPDIR)/fact2dec.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@src/$(DEPDIR)/globals.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@src/$(DEPDIR)/options.Po@am__quote@
 
 .c.o:
 @am__fastdepCC_TRUE@	$(AM_V_CC)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.o$$||'`;\

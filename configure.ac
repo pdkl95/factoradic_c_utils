@@ -142,7 +142,7 @@ AX_C___ATTRIBUTE__
 AC_C_CONST
 
 dnl Checks for header files.
-AC_CHECK_HEADERS([libgen.h stdlib.h])
+AC_CHECK_HEADERS([libgen.h stdlib.h string,h])
 AC_CHECK_HEADER(gmp.h, ,
   [AC_MSG_ERROR([GNU MP not found, see https://gmplib.org/])])
 
@@ -155,7 +155,7 @@ AC_TYPE_SSIZE_T
 
 dnl Checks for library functions.
 AC_FUNC_MALLOC
-AC_CHECK_FUNCS([basename memset])
+AC_CHECK_FUNCS([basename memset perror strdup strtok])
 AX_FUNC_GETOPT_LONG
 AC_CHECK_LIB(gmp, __gmpz_init, ,
   [AC_MSG_ERROR([GNU MP not found, see https://gmplib.org/])])

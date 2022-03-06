@@ -1,4 +1,5 @@
 #include "common.h"
+#include "options.h"
 
 #include <stdio.h>
 #include <limits.h>
@@ -8,7 +9,76 @@
 
 #include <gmp.h>
 
-char *delim = ",";
+
+#define DEFAULT_DELIMETERS ":,"
+
+char *delimiters = DEFAULT_DELIMETERS;
+
+static char short_options[] = "d:Vh";
+
+static struct option long_options[] = {
+    { "delimiter", required_argument, 0, 'A' },
+    {   "version",       no_argument, 0, '.' },
+    {      "help",       no_argument, 0, 'h' },
+    {           0,                 0, 0,  0  }
+};
+
+static char usage_args[] = "<factoradic_number> [...]";
+
+static char help_text[] =
+    "\n"
+    "A utility that converts numbers written in\n"
+    "factorial base into decimal.\n"
+    "\n"
+    "OPTIONS\n"
+    "  -d, --delimiter             Set the character that separates\n"
+    "                                the places in factorial bass numbers.\n"
+    "                                (default: \":,\")\n"
+    "\n"
+    "      --version               Show version information and exit\n"
+    "  -h, --help                  Show this help and exit\n"
+    ;
+
+static bool
+parse_args(
+    int argc,
+    char *argv[]
+) {
+
+        int c;
+
+    for (;;) {
+        int option_index = 0;
+
+        c = getopt_long(argc, argv, short_options, long_options, &option_index);
+
+        if (-1 == c) {
+            break;
+        }
+
+        switch (c) {
+        case 'd':
+            options_set_str(&delimiters, optarg);
+            break;
+
+        case 'V':
+            show_version();
+            exit(0);
+            break;
+
+        case 'h':
+            show_help(help_text, usage_args);
+            exit(0);
+            break;
+
+        default:
+            fprintf(stderr, "ERROR: getopt returned character code 0%o", c);
+            return false;
+        }
+    }
+
+    return true;
+}
 
 bool
 convert_factoradic_string(
@@ -30,10 +100,10 @@ convert_factoradic_string(
 
     /* first count the number of split place values */
     tmpstr = strdup(factoradic_string);
-    token = strtok(tmpstr, delim);
+    token = strtok(tmpstr, delimiters);
     while (token != NULL) {
         num_places++;
-        token = strtok(NULL, delim);
+        token = strtok(NULL, delimiters);
     }
     free(tmpstr);
 
@@ -41,7 +111,7 @@ convert_factoradic_string(
 
     /* ...then convert the split values into ints */
     tmpstr = strdup(factoradic_string);
-    token = strtok(tmpstr, delim);
+    token = strtok(tmpstr, delimiters);
     p = place_values;
     while (token != NULL) {
         long value = strtol(token, &endptr, 10);
@@ -62,7 +132,7 @@ convert_factoradic_string(
         *p = value;
 
         p++;
-        token = strtok(NULL, delim);
+        token = strtok(NULL, delimiters);
     }
 
     for (int i = 0; i < num_places; i++) {
@@ -92,9 +162,15 @@ main(
 ) {
     progname = basename(argv[0]);
 
+    /* configure options */
+    if (!parse_args(argc, argv)) {
+        fprintf(stderr, "ERROR: bad args");
+        return EXIT_FAILURE;
+    }
+
     bool run_ok = true;
 
-    // do stuff
+    /* convert numbers */
     for (int i=1; i<argc; i++) {
         if (!convert_factoradic_string(argv[i])) {
             fprintf(stderr, "ERROR: could not convert \"%s\".\n", argv[i]);
