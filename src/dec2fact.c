@@ -1,10 +1,83 @@
 #include "common.h"
+#include "options.h"
+
+#include <stdio.h>
 #include <getopt.h>
 #include <libgen.h>
 
 #include <gmp.h>
 
-char *delim = ":";
+
+
+#define DEFAULT_DELIMETER ":"
+
+char *delimiter = NULL;
+
+static char short_options[] = "d:Vh";
+
+static struct option long_options[] = {
+    { "delimiter", required_argument, 0, 'A' },
+    {   "version",       no_argument, 0, '.' },
+    {      "help",       no_argument, 0, 'h' },
+    {           0,                 0, 0,  0  }
+};
+
+static char usage_args[] = ">decimal_integer> [...]";
+
+static char help_text[] =
+    "\n"
+    "A utility that converts integers written in\n"
+    "decimal (base 10) into factorial base.\n"
+    "\n"
+    "OPTIONS\n"
+    "  -d, --delimiter             Set the character that separates\n"
+    "                                the places in factorial bass numbers.\n"
+    "                                (default: \":\")\n"
+    "\n"
+    "      --version               Show version information and exit\n"
+    "  -h, --help                  Show this help and exit\n"
+    ;
+
+
+static bool
+parse_args(
+    int argc,
+    char *argv[]
+) {
+    int c;
+
+    for (;;) {
+        int option_index = 0;
+
+        c = getopt_long(argc, argv, short_options, long_options, &option_index);
+
+        if (-1 == c) {
+            break;
+        }
+
+        switch (c) {
+        case 'd':
+            options_set_str(&delimiter, optarg);
+            break;
+
+        case 'V':
+            show_version();
+            exit(0);
+            break;
+
+        case 'h':
+            show_help(help_text, usage_args);
+            exit(0);
+            break;
+
+        default:
+            fprintf(stderr, "ERROR: getopt returned character code 0%o", c);
+            return false;
+        }
+    }
+
+    return true;
+}
 
 struct stack_node {
     unsigned long int data;
@@ -73,7 +146,7 @@ convert_decimal_string(
         if (first) {
             first = false;
         } else {
-            fprintf(stdout, "%s", delim);
+            fprintf(stdout, "%s", delimiter);
         }
 
         fprintf(stdout, "%ld", tmp->data);
@@ -100,10 +173,18 @@ main(
 ) {
     progname = basename(argv[0]);
 
+    delimiter = strdup(DEFAULT_DELIMETER);
+
+    /* configure options */
+    if (!parse_args(argc, argv)) {
+        fprintf(stderr, "ERROR: bad args");
+        return EXIT_FAILURE;
+    }
+
     bool run_ok = true;
 
-    // do stuff
-    for (int i=1; i<argc; i++) {
+    /* convert numbers */
+    for (int i=optind; i<argc; i++) {
         if (!convert_decimal_string(argv[i])) {
             fprintf(stderr, "ERROR: could not convert \"%s\".\n", argv[i]);
             run_ok = false;

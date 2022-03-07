@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <limits.h>
+#include <ctype.h>
 
 #include <getopt.h>
 #include <libgen.h>
@@ -12,7 +13,7 @@
 
 #define DEFAULT_DELIMETERS ":,"
 
-char *delimiters = DEFAULT_DELIMETERS;
+char *delimiters = NULL;
 
 static char short_options[] = "d:Vh";
 
@@ -23,12 +24,12 @@ static struct option long_options[] = {
     {           0,                 0, 0,  0  }
 };
 
-static char usage_args[] = "<factoradic_number> [...]";
+static char usage_args[] = "<factoradic_integer> [...]";
 
 static char help_text[] =
     "\n"
-    "A utility that converts numbers written in\n"
-    "factorial base into decimal.\n"
+    "A utility that converts integerss written in\n"
+    "factorial base into decimal (base 10).\n"
     "\n"
     "OPTIONS\n"
     "  -d, --delimiter             Set the character that separates\n"
@@ -44,8 +45,7 @@ parse_args(
     int argc,
     char *argv[]
 ) {
-
-        int c;
+    int c;
 
     for (;;) {
         int option_index = 0;
@@ -81,6 +81,19 @@ parse_args(
 }
 
 bool
+is_decimal_integer(
+    char *str
+) {
+    for (char *p = str; *p != '\0'; p++) {
+        if ((*p < '0') || (*p > '9')) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+bool
 convert_factoradic_string(
     char *factoradic_string
 ) {
@@ -102,6 +115,12 @@ convert_factoradic_string(
     tmpstr = strdup(factoradic_string);
     token = strtok(tmpstr, delimiters);
     while (token != NULL) {
+        if (!is_decimal_integer(token)) {
+            fprintf(stderr, "ERROR: string \"%s\" is not a decimal integer!\n", token);
+            rv = false;
+            goto cleanup;
+        }
+
         num_places++;
         token = strtok(NULL, delimiters);
     }
@@ -146,8 +165,12 @@ convert_factoradic_string(
     fprintf(stdout, "\n");
 
   cleanup:
-    free(place_values);
-    free(tmpstr);
+    if (place_values) {
+        free(place_values);
+    }
+    if (tmpstr) {
+        free(tmpstr);
+    }
 
     mpz_clear(fact);
     mpz_clear(total);
@@ -162,6 +185,8 @@ main(
 ) {
     progname = basename(argv[0]);
 
+    delimiters = strdup(DEFAULT_DELIMETERS);
+
     /* configure options */
     if (!parse_args(argc, argv)) {
         fprintf(stderr, "ERROR: bad args");
@@ -171,7 +196,7 @@ main(
     bool run_ok = true;
 
     /* convert numbers */
-    for (int i=1; i<argc; i++) {
+    for (int i=optind; i<argc; i++) {
         if (!convert_factoradic_string(argv[i])) {
             fprintf(stderr, "ERROR: could not convert \"%s\".\n", argv[i]);
             run_ok = false;
