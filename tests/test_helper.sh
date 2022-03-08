@@ -10,7 +10,7 @@ TEST_RV=0
 
 set_test_program()
 {
-    TEST_PROG="${srcdir}/$1"
+    TEST_PROG="${builddir}/$1"
 
     if ! test -e "${TEST_PROG}" ; then
         bail_out "Test program \"${TEST_PROGRAM}\" does not exist!"

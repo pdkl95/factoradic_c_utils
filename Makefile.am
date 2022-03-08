@@ -7,7 +7,7 @@ LDADD = -lgmp
 bin_PROGRAMS = dec2fact fact2dec
 
 COMMON_SRC = \
-	src/options.c options.h \
+	src/options.c src/options.h \
 	src/globals.c \
 	src/common.h
 
@@ -21,6 +21,8 @@ fact2dec_SOURCES = \
 
 TEST_LOG_DRIVER = env AM_TAP_AWK='$(AWK)' $(SHELL) \
                   $(top_srcdir)/build-aux/tap-driver.sh
+
+TESTS_ENVIRONMENT = builddir=$(builddir)
 
 TESTS = tests/check_dec2fact \
 	tests/check_fact2dec
