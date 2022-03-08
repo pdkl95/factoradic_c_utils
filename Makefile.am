@@ -2,9 +2,6 @@ ACLOCAL_AMFLAGS = -I m4
 
 AM_CPPFLAGS = -Wall -Wextra
 
-EXTRA_DIST = \
-	README.m4
-
 LDADD = -lgmp
 
 bin_PROGRAMS = dec2fact fact2dec
@@ -22,3 +19,13 @@ fact2dec_SOURCES = \
 	$(COMMON_SRC) \
 	src/fact2dec.c
 
+TEST_LOG_DRIVER = env AM_TAP_AWK='$(AWK)' $(SHELL) \
+                  $(top_srcdir)/build-aux/tap-driver.sh
+
+TESTS = tests/check_dec2fact \
+	tests/check_fact2dec
+
+EXTRA_DIST = \
+	$(TESTS) \
+	tests/test_helper.sh \
+	README.m4

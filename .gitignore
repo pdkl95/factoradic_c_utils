@@ -1,5 +1,6 @@
 dec2fact
 fact2dec
+tests/*.trs
 Makefile
 autom4te.cache
 config.h

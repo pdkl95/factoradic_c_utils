@@ -1,0 +1,22 @@
+#!/bin/sh
+
+. "${srcdir}/tests/test_helper.sh"
+
+set_test_program fact2dec
+
+assert_output 0   0
+assert_output 1 1:0
+
+assert_output 463   3:4:1:0:1:0
+assert_output 719   5:4:3:2:1:0
+assert_output 720 1:0:0:0:0:0:0
+
+end_of_tests
+
+
+# Local Variables:
+# mode: sh
+# sh-basic-offset: 4
+# sh-shell: sh
+# coding: unix
+# End:

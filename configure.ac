@@ -34,6 +34,8 @@ AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_SRCDIR([Makefile.am])
 AC_CONFIG_HEADERS([config.h])
 
+AC_REQUIRE_AUX_FILE([tap-driver.sh])
+
 AM_INIT_AUTOMAKE([1.13 foreign color-tests dist-xz subdir-objects -Wall -Werror])
 AM_MAINTAINER_MODE([enable])
 
