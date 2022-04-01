@@ -31,3 +31,6 @@ EXTRA_DIST = \
 	$(TESTS) \
 	tests/test_helper.sh \
 	README.m4
+
+benchmark:
+	./benchmark.sh 2>&1 | tee benchmark.txt 
