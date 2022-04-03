@@ -25,9 +25,11 @@ or download and unpack the [zip arhive](https://github.com/pdkl95/factoradic/arc
     make check    # optional
     make install
 
-See ./configure --help for a list a buils and install options..
+See `./configure --help` for a list a buils and install options..
 
-If the autoconf script cannot find gmp, you can provide the location of the librarey and header file directly with the --with-gmp-include=DIR and --with-gmp-lib=OPTIONS
+If the autoconf script cannot find gmp, you can provide the location
+of the librarey and header file directly with the
+`--with-gmp-include=DIR` and `--with-gmp-lib=DIR` options.
 
 ## Usage
 
@@ -43,7 +45,6 @@ If the autoconf script cannot find gmp, you can provide the location of the libr
     1,0,0,0,0,0,0
 
 ### converting factoradic to decimal
-
 
     $ fact2dec 5:4:3:2:1:0
     719
