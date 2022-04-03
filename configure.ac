@@ -1,5 +1,21 @@
 dnl -*- Autoconf -*-
 
+dnl  This file is part of factoradic_c_utils.
+dnl
+dnl  factoradic_c_utils is free software: you can redistribute it and/or
+dnl  modify it under the terms of the GNU General Public License as published
+dnl  by the Free Software Foundation, either version 3 of the License,
+dnl  or (at your option) any later version.
+dnl
+dnl  factoradic_c_utils is distributed in the hope that it will be useful,
+dnl  but WITHOUT ANY WARRANTY; without even the implied warranty of
+dnl  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+dnl  Public License for more details.
+dnl
+dnl  You should have received a copy of the GNU General Public License along
+dnl  with factoradic_c_utils. If not, see <https://www.gnu.org/licenses/>.
+
+
 m4_define([project_name], [factoradic_c_utils])
 m4_define([project_url], [https://github.com/pdkl95/]project_name)
 m4_define([project_email], [pdkl95@gmail.com])
