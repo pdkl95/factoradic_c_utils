@@ -21,21 +21,24 @@
 #include "options.h"
 
 #include <stdio.h>
+#include <string.h>
 #include <getopt.h>
 #include <libgen.h>
 
 #include <gmp.h>
 
 
-
 #define DEFAULT_DELIMETER ":"
 
 char *delimiter = NULL;
+bool read_from_stdin = false;
 
-static char short_options[] = "d:Vh";
+
+static char short_options[] = "d:Vhs";
 
 static struct option long_options[] = {
     { "delimiter", required_argument, 0, 'A' },
+    {     "stdin",       no_argument, 0, 's' },
     {   "version",       no_argument, 0, '.' },
     {      "help",       no_argument, 0, 'h' },
     {           0,                 0, 0,  0  }
@@ -52,6 +55,11 @@ static char help_text[] =
     "  -d, --delimiter             Set the character that separates\n"
     "                                the places in factorial bass numbers.\n"
     "                                (default: \":\")\n"
+    "\n"
+    "  -s, --stdin                 Read newline (\"\\n\") separated numbers\n"
+    "                                from stdin. Reading from stdin will\n"
+    "                                automatically enabled when the first\n"
+    "                                non-option arg is \"-\".\n"
     "\n"
     "      --version               Show version information and exit\n"
     "  -h, --help                  Show this help and exit\n"
@@ -77,6 +85,10 @@ parse_args(
         switch (c) {
         case 'd':
             options_set_str(&delimiter, optarg);
+            break;
+
+        case 's':
+            read_from_stdin = true;
             break;
 
         case 'V':
@@ -124,26 +136,19 @@ stack_push(
 }
 
 bool
-convert_decimal_string(
-    char *str
+convert_value(
+    mpz_t value
 ) {
     bool rv = true;
     bool first = true;
 
     struct stack_node *stack_root = NULL;
 
-    mpz_t value, divisor, zero, q, r;
-    mpz_init(value);
+    mpz_t divisor, zero, q, r;
     mpz_init(divisor);
     mpz_init(zero);
     mpz_init(q);
     mpz_init(r);
-
-    if (-1 == mpz_set_str(value, str, 10)) {
-        fprintf(stderr, "ERROR: input string is not a base 10 integer: \"%s\"\n", str);
-        rv = false;
-        goto cleanup;
-    }
 
     mpz_set(q, value);
     mpz_set_ui(divisor, (unsigned long int)2);
@@ -175,11 +180,59 @@ convert_decimal_string(
 
     fprintf(stdout, "\n");
 
-  cleanup:
     mpz_clear(r);
     mpz_clear(q);
     mpz_clear(zero);
     mpz_clear(divisor);
+
+    return rv;
+}
+
+bool
+convert_decimal_string(
+    char *str
+) {
+    bool rv = true;
+    mpz_t value;
+    mpz_init(value);
+
+    if (-1 == mpz_set_str(value, str, 10)) {
+        fprintf(stderr, "ERROR: input string is not a base 10 integer: \"%s\"\n", str);
+        rv = false;
+        goto cleanup;
+    }
+
+    rv = convert_value(value);
+
+  cleanup:
+    mpz_clear(value);
+
+    return rv;
+}
+
+bool
+convert_file_stream(
+    FILE *stream
+) {
+    bool rv = true;
+    mpz_t value;
+    mpz_init(value);
+
+    while (true) {
+        size_t len = mpz_inp_str(value, stream, 10);
+
+        if (len == 0) {
+            break;
+        }
+
+        rv = convert_value(value);
+
+        if (!rv) {
+            goto cleanup;
+        }
+    }
+
+  cleanup:
     mpz_clear(value);
 
     return rv;
@@ -203,11 +256,18 @@ main(
     bool run_ok = true;
 
     /* convert numbers */
-    for (int i=optind; i<argc; i++) {
-        if (!convert_decimal_string(argv[i])) {
-            fprintf(stderr, "ERROR: could not convert \"%s\".\n", argv[i]);
-            run_ok = false;
-            break;
+    if (read_from_stdin || (
+            (optind < argc) &&
+            (0 == strcmp(argv[optind], "-"))
+        )) {
+        run_ok = convert_file_stream(stdin);
+    } else {
+        for (int i=optind; i<argc; i++) {
+            if (!convert_decimal_string(argv[i])) {
+                fprintf(stderr, "ERROR: could not convert \"%s\".\n", argv[i]);
+                run_ok = false;
+                break;
+            }
         }
     }
 
