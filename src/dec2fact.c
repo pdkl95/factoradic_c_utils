@@ -20,8 +20,7 @@
 #include "common.h"
 #include "options.h"
 
-#include <stdio.h>
-#include <string.h>
+
 #include <getopt.h>
 #include <libgen.h>
 
@@ -57,7 +56,7 @@ static char help_text[] =
     "                                (default: \":\")\n"
     "\n"
     "  -s, --stdin                 Read newline (\"\\n\") separated numbers\n"
-    "                                from stdin. Reading from stdin will\n"
+    "                                from stdin. Reading from stdin is\n"
     "                                automatically enabled when the first\n"
     "                                non-option arg is \"-\".\n"
     "\n"

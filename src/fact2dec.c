@@ -20,7 +20,6 @@
 #include "common.h"
 #include "options.h"
 
-#include <stdio.h>
 #include <limits.h>
 #include <ctype.h>
 
@@ -33,11 +32,13 @@
 #define DEFAULT_DELIMETERS ":,"
 
 char *delimiters = NULL;
+bool read_from_stdin = false;
 
-static char short_options[] = "d:Vh";
+static char short_options[] = "d:Vhs";
 
 static struct option long_options[] = {
     { "delimiter", required_argument, 0, 'A' },
+    {     "stdin",       no_argument, 0, 's' },
     {   "version",       no_argument, 0, '.' },
     {      "help",       no_argument, 0, 'h' },
     {           0,                 0, 0,  0  }
@@ -54,6 +55,11 @@ static char help_text[] =
     "  -d, --delimiter             Set the character that separates\n"
     "                                the places in factorial bass numbers.\n"
     "                                (default: \":,\")\n"
+    "\n"
+    "  -s, --stdin                 Read newline (\"\\n\") separated numbers\n"
+    "                                from stdin. Reading from stdin is\n"
+    "                                automatically enabled when the first\n"
+    "                                non-option arg is \"-\".\n"
     "\n"
     "      --version               Show version information and exit\n"
     "  -h, --help                  Show this help and exit\n"
@@ -78,6 +84,10 @@ parse_args(
         switch (c) {
         case 'd':
             options_set_str(&delimiters, optarg);
+            break;
+
+        case 's':
+            read_from_stdin = true;
             break;
 
         case 'V':
@@ -197,6 +207,35 @@ convert_factoradic_string(
     return rv;
 }
 
+bool
+convert_file_stream(
+    FILE *stream
+) {
+    bool rv = true;
+    char *line = NULL;
+    size_t buffer_length = 0;
+    ssize_t line_length;
+
+    while ((line_length = getline(&line, &buffer_length, stream)) != -1) {
+        // magic to remove possible trailing \n
+        line[strcspn(line, "\r\n")] = '\0';
+
+        rv = convert_factoradic_string(line);
+
+        if (!rv) {
+            goto cleanup;
+        }
+    }
+
+
+  cleanup:
+    if (line) {
+        free(line);
+    }
+
+    return rv;
+}
+
 int
 main(
     int   argc,
@@ -215,11 +254,18 @@ main(
     bool run_ok = true;
 
     /* convert numbers */
-    for (int i=optind; i<argc; i++) {
-        if (!convert_factoradic_string(argv[i])) {
-            fprintf(stderr, "ERROR: could not convert \"%s\".\n", argv[i]);
-            run_ok = false;
-            break;
+    if (read_from_stdin || (
+            (optind < argc) &&
+            (0 == strcmp(argv[optind], "-"))
+        )) {
+        run_ok = convert_file_stream(stdin);
+    } else {
+        for (int i=optind; i<argc; i++) {
+            if (!convert_factoradic_string(argv[i])) {
+                fprintf(stderr, "ERROR: could not convert \"%s\".\n", argv[i]);
+                run_ok = false;
+                break;
+            }
         }
     }
 

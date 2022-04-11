@@ -173,8 +173,10 @@ AC_TYPE_SSIZE_T
 
 dnl Checks for library functions.
 AC_FUNC_MALLOC
-AC_CHECK_FUNCS([basename memset perror strdup strtok])
+AC_CHECK_FUNCS([basename memset perror strcspn strdup strtok])
 AX_FUNC_GETOPT_LONG
+AC_CHECK_FUNCS([getline], ,
+  [AC_MSG_ERROR([Cannot find the function getline()])])
 AC_CHECK_LIB(gmp, __gmpz_init, ,
   [AC_MSG_ERROR([GNU MP not found, see https://gmplib.org/])])
 

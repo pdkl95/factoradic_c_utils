@@ -5360,7 +5360,7 @@ $as_echo "#define malloc rpl_malloc" >>confdefs.h
 fi
 
 
-for ac_func in basename memset perror strdup strtok
+for ac_func in basename memset perror strcspn strdup strtok
 do :
   as_ac_var=`$as_echo "ac_cv_func_$ac_func" | $as_tr_sh`
 ac_fn_c_check_func "$LINENO" "$ac_func" "$as_ac_var"
@@ -5454,6 +5454,19 @@ esac
 
 fi
 
+fi
+done
+
+for ac_func in getline
+do :
+  ac_fn_c_check_func "$LINENO" "getline" "ac_cv_func_getline"
+if test "x$ac_cv_func_getline" = xyes; then :
+  cat >>confdefs.h <<_ACEOF
+#define HAVE_GETLINE 1
+_ACEOF
+
+else
+  as_fn_error $? "Cannot find the function getline()" "$LINENO" 5
 fi
 done
 
