@@ -542,7 +542,7 @@ TESTS = tests/check_dec2fact \
 EXTRA_DIST = \
 	$(TESTS) \
 	tests/test_helper.sh \
-	README.m4
+	README.md
 
 all: config.h
 	$(MAKE) $(AM_MAKEFLAGS) all-am

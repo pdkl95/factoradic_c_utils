@@ -50,7 +50,7 @@ TESTS = tests/check_dec2fact \
 EXTRA_DIST = \
 	$(TESTS) \
 	tests/test_helper.sh \
-	README.m4
+	README.md
 
 benchmark:
 	./benchmark.sh 2>&1 | tee benchmark.txt 
