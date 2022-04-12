@@ -44,13 +44,27 @@ TEST_LOG_DRIVER = env AM_TAP_AWK='$(AWK)' $(SHELL) \
 
 TESTS_ENVIRONMENT = builddir=$(builddir)
 
-TESTS = tests/check_dec2fact \
+SHELLTESTS = \
+	tests/check_dec2fact \
 	tests/check_fact2dec
 
+TESTS = $(SHELLTESTS)
+
 EXTRA_DIST = \
-	$(TESTS) \
+	$(SHELLTESTS) \
 	tests/test_helper.sh \
+	m4/gnulib/gnulib-cache.m4 \
 	README.md
 
 benchmark:
 	./benchmark.sh 2>&1 | tee benchmark.txt 
+
+
+
+#@# GNUlib stuff
+MOSTLYCLEANFILES =
+noinst_LIBRARIES =
+BUILT_SOURCES =
+include lib/gnulib/Makefile.gnulib
+
+

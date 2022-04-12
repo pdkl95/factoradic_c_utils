@@ -46,7 +46,7 @@ dnl ===  general Autotools Setup  ===
 dnl =================================
 
 AC_CONFIG_AUX_DIR([build-aux])
-AC_CONFIG_MACRO_DIR([m4])
+AC_CONFIG_MACRO_DIRS([m4 m4/gnulib])
 AC_CONFIG_SRCDIR([Makefile.am])
 AC_CONFIG_HEADERS([config.h])
 
@@ -118,8 +118,10 @@ dnl ========================================
 dnl ===  Compiler/Language Dependencies  ===
 dnl ========================================
 
-AC_PROG_CC
+dnl AC_PROG_CC
 AC_PROG_CC_C99
+gl_EARLY
+
 AM_PROG_CC_C_O
 AC_LANG(C)
 
@@ -179,6 +181,10 @@ AC_CHECK_FUNCS([getline], ,
   [AC_MSG_ERROR([Cannot find the function getline()])])
 AC_CHECK_LIB(gmp, __gmpz_init, ,
   [AC_MSG_ERROR([GNU MP not found, see https://gmplib.org/])])
+
+dnl optional GNUlib replacements for certain
+dnl required but missing standard library features
+gl_INIT
 
 dnl Export any extra build options
 APP_CFLAGS=""
