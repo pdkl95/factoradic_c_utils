@@ -637,11 +637,207 @@ ALL_PKG_LIBS
 ALL_PKG_CFLAGS
 APP_LIBS
 APP_CFLAGS
+LIBTESTS_LIBDEPS
 LIBGNU_LTLIBDEPS
 LIBGNU_LIBDEPS
 GL_CFLAG_GNULIB_WARNINGS
-GL_CFLAG_ALLOW_WARNINGS
+gl_GNULIB_ENABLED_219e5afb5d165bdce602a787b2a20d23_FALSE
+gl_GNULIB_ENABLED_219e5afb5d165bdce602a787b2a20d23_TRUE
+gl_GNULIB_ENABLED_dc4606667f1e9e0c2352e4dc23d2d200_FALSE
+gl_GNULIB_ENABLED_dc4606667f1e9e0c2352e4dc23d2d200_TRUE
+GL_GNULIB_MDA_WRITE
+GL_GNULIB_MDA_UNLINK
+GL_GNULIB_MDA_SWAB
+GL_GNULIB_MDA_RMDIR
+GL_GNULIB_MDA_READ
+GL_GNULIB_MDA_LSEEK
+GL_GNULIB_MDA_ISATTY
+GL_GNULIB_MDA_GETPID
+GL_GNULIB_MDA_GETCWD
+GL_GNULIB_MDA_EXECVPE
+GL_GNULIB_MDA_EXECVP
+GL_GNULIB_MDA_EXECVE
+GL_GNULIB_MDA_EXECV
+GL_GNULIB_MDA_EXECLP
+GL_GNULIB_MDA_EXECLE
+GL_GNULIB_MDA_EXECL
+GL_GNULIB_MDA_DUP2
+GL_GNULIB_MDA_DUP
+GL_GNULIB_MDA_CLOSE
+GL_GNULIB_MDA_CHDIR
+GL_GNULIB_MDA_ACCESS
+GL_GNULIB_WRITE
+GL_GNULIB_USLEEP
+GL_GNULIB_UNLINKAT
+GL_GNULIB_UNLINK
+GL_GNULIB_UNISTD_H_SIGPIPE
+GL_GNULIB_UNISTD_H_NONBLOCKING
+GL_GNULIB_UNISTD_H_GETOPT
+GL_GNULIB_TTYNAME_R
+GL_GNULIB_TRUNCATE
+GL_GNULIB_SYMLINKAT
+GL_GNULIB_SYMLINK
+GL_GNULIB_SLEEP
+GL_GNULIB_SETHOSTNAME
+GL_GNULIB_RMDIR
+GL_GNULIB_READLINKAT
+GL_GNULIB_READLINK
+GL_GNULIB_READ
+GL_GNULIB_PWRITE
+GL_GNULIB_PREAD
+GL_GNULIB_PIPE2
+GL_GNULIB_PIPE
+GL_GNULIB_LSEEK
+GL_GNULIB_LINKAT
+GL_GNULIB_LINK
+GL_GNULIB_LCHOWN
+GL_GNULIB_ISATTY
+GL_GNULIB_GROUP_MEMBER
+GL_GNULIB_GETUSERSHELL
+GL_GNULIB_GETPASS_GNU
+GL_GNULIB_GETPASS
+GL_GNULIB_GETPAGESIZE
+GL_GNULIB_GETOPT_POSIX
+GL_GNULIB_GETLOGIN_R
+GL_GNULIB_GETLOGIN
+GL_GNULIB_GETHOSTNAME
+GL_GNULIB_GETGROUPS
+GL_GNULIB_GETENTROPY
+GL_GNULIB_GETDTABLESIZE
+GL_GNULIB_GETDOMAINNAME
+GL_GNULIB_GETCWD
+GL_GNULIB_FTRUNCATE
+GL_GNULIB_FSYNC
+GL_GNULIB_FDATASYNC
+GL_GNULIB_FCHOWNAT
+GL_GNULIB_FCHDIR
+GL_GNULIB_FACCESSAT
+GL_GNULIB_EXECVPE
+GL_GNULIB_EXECVP
+GL_GNULIB_EXECVE
+GL_GNULIB_EXECV
+GL_GNULIB_EXECLP
+GL_GNULIB_EXECLE
+GL_GNULIB_EXECL
+GL_GNULIB_EUIDACCESS
+GL_GNULIB_ENVIRON
+GL_GNULIB_DUP3
+GL_GNULIB_DUP2
+GL_GNULIB_DUP
+GL_GNULIB_COPY_FILE_RANGE
+GL_GNULIB_CLOSE
+GL_GNULIB_CHOWN
+GL_GNULIB_CHDIR
+GL_GNULIB_ACCESS
+HAVE_UNISTD_H
+NEXT_AS_FIRST_DIRECTIVE_UNISTD_H
+NEXT_UNISTD_H
+UNISTD_H_HAVE_WINSOCK2_H_AND_USE_SOCKETS
+UNISTD_H_HAVE_WINSOCK2_H
+UNISTD_H_HAVE_SYS_RANDOM_H
+REPLACE_WRITE
+REPLACE_USLEEP
+REPLACE_UNLINKAT
+REPLACE_UNLINK
+REPLACE_TTYNAME_R
+REPLACE_TRUNCATE
+REPLACE_SYMLINKAT
+REPLACE_SYMLINK
+REPLACE_SLEEP
+REPLACE_RMDIR
+REPLACE_READLINKAT
+REPLACE_READLINK
+REPLACE_READ
+REPLACE_PWRITE
+REPLACE_PREAD
+REPLACE_LSEEK
+REPLACE_LINKAT
+REPLACE_LINK
+REPLACE_LCHOWN
+REPLACE_ISATTY
+REPLACE_GETPASS_FOR_GETPASS_GNU
+REPLACE_GETPASS
+REPLACE_GETPAGESIZE
+REPLACE_GETGROUPS
+REPLACE_GETLOGIN_R
+REPLACE_GETDTABLESIZE
+REPLACE_GETDOMAINNAME
+REPLACE_GETCWD
+REPLACE_FTRUNCATE
+REPLACE_FCHOWNAT
+REPLACE_FACCESSAT
+REPLACE_EXECVPE
+REPLACE_EXECVP
+REPLACE_EXECVE
+REPLACE_EXECV
+REPLACE_EXECLP
+REPLACE_EXECLE
+REPLACE_EXECL
+REPLACE_DUP2
+REPLACE_DUP
+REPLACE_COPY_FILE_RANGE
+REPLACE_CLOSE
+REPLACE_CHOWN
+REPLACE_ACCESS
+HAVE_SYS_PARAM_H
+HAVE_OS_H
+HAVE_DECL_TTYNAME_R
+HAVE_DECL_TRUNCATE
+HAVE_DECL_SETHOSTNAME
+HAVE_DECL_GETUSERSHELL
+HAVE_DECL_GETPAGESIZE
+HAVE_DECL_GETLOGIN_R
+HAVE_DECL_GETLOGIN
+HAVE_DECL_GETDOMAINNAME
+HAVE_DECL_FDATASYNC
+HAVE_DECL_FCHDIR
+HAVE_DECL_EXECVPE
+HAVE_DECL_ENVIRON
+HAVE_USLEEP
+HAVE_UNLINKAT
+HAVE_SYMLINKAT
+HAVE_SYMLINK
+HAVE_SLEEP
+HAVE_SETHOSTNAME
+HAVE_READLINKAT
+HAVE_READLINK
+HAVE_PWRITE
+HAVE_PREAD
+HAVE_PIPE2
+HAVE_PIPE
+HAVE_LINKAT
+HAVE_LINK
+HAVE_LCHOWN
+HAVE_GROUP_MEMBER
+HAVE_GETPASS
+HAVE_GETPAGESIZE
+HAVE_GETLOGIN
+HAVE_GETHOSTNAME
+HAVE_GETGROUPS
+HAVE_GETENTROPY
+HAVE_GETDTABLESIZE
+HAVE_FTRUNCATE
+HAVE_FSYNC
+HAVE_FDATASYNC
+HAVE_FCHOWNAT
+HAVE_FCHDIR
+HAVE_FACCESSAT
+HAVE_EXECVPE
+HAVE_EUIDACCESS
+HAVE_DUP3
+HAVE_COPY_FILE_RANGE
+HAVE_CHOWN
+GL_GENERATE_STDALIGN_H_FALSE
+GL_GENERATE_STDALIGN_H_TRUE
+STDALIGN_H
+GL_COND_OBJ_MSVC_INVAL_FALSE
+GL_COND_OBJ_MSVC_INVAL_TRUE
+GL_COND_OBJ_FDOPEN_FALSE
+GL_COND_OBJ_FDOPEN_TRUE
+HAVE_MSVC_INVALID_PARAMETER_HANDLER
 gltests_WITNESS
+GL_CXXFLAG_ALLOW_WARNINGS
+GL_CFLAG_ALLOW_WARNINGS
 gl_GNULIB_ENABLED_getdelim_FALSE
 gl_GNULIB_ENABLED_getdelim_TRUE
 gl_GNULIB_ENABLED_errno_FALSE
@@ -2576,6 +2772,8 @@ fi
 as_fn_append ac_header_list " wchar.h"
 as_fn_append ac_header_list " minix/config.h"
 as_fn_append ac_func_list " getdelim"
+as_fn_append ac_func_list " _set_invalid_parameter_handler"
+as_fn_append ac_header_list " unistd.h"
 # Check that the precious variables saved in the cache have kept the same
 # value.
 ac_cache_corrupted=false
@@ -3956,6 +4154,100 @@ esac
 fi
 
 fi
+if test -z "$CC"; then
+  if test -n "$ac_tool_prefix"; then
+  # Extract the first word of "${ac_tool_prefix}clang", so it can be a program name with args.
+set dummy ${ac_tool_prefix}clang; ac_word=$2
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for $ac_word" >&5
+$as_echo_n "checking for $ac_word... " >&6; }
+if ${ac_cv_prog_CC+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  if test -n "$CC"; then
+  ac_cv_prog_CC="$CC" # Let the user override the test.
+else
+as_save_IFS=$IFS; IFS=$PATH_SEPARATOR
+for as_dir in $PATH
+do
+  IFS=$as_save_IFS
+  test -z "$as_dir" && as_dir=.
+    for ac_exec_ext in '' $ac_executable_extensions; do
+  if as_fn_executable_p "$as_dir/$ac_word$ac_exec_ext"; then
+    ac_cv_prog_CC="${ac_tool_prefix}clang"
+    $as_echo "$as_me:${as_lineno-$LINENO}: found $as_dir/$ac_word$ac_exec_ext" >&5
+    break 2
+  fi
+done
+  done
+IFS=$as_save_IFS
+
+fi
+fi
+CC=$ac_cv_prog_CC
+if test -n "$CC"; then
+  { $as_echo "$as_me:${as_lineno-$LINENO}: result: $CC" >&5
+$as_echo "$CC" >&6; }
+else
+  { $as_echo "$as_me:${as_lineno-$LINENO}: result: no" >&5
+$as_echo "no" >&6; }
+fi
+
+
+fi
+if test -z "$ac_cv_prog_CC"; then
+  ac_ct_CC=$CC
+  # Extract the first word of "clang", so it can be a program name with args.
+set dummy clang; ac_word=$2
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for $ac_word" >&5
+$as_echo_n "checking for $ac_word... " >&6; }
+if ${ac_cv_prog_ac_ct_CC+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  if test -n "$ac_ct_CC"; then
+  ac_cv_prog_ac_ct_CC="$ac_ct_CC" # Let the user override the test.
+else
+as_save_IFS=$IFS; IFS=$PATH_SEPARATOR
+for as_dir in $PATH
+do
+  IFS=$as_save_IFS
+  test -z "$as_dir" && as_dir=.
+    for ac_exec_ext in '' $ac_executable_extensions; do
+  if as_fn_executable_p "$as_dir/$ac_word$ac_exec_ext"; then
+    ac_cv_prog_ac_ct_CC="clang"
+    $as_echo "$as_me:${as_lineno-$LINENO}: found $as_dir/$ac_word$ac_exec_ext" >&5
+    break 2
+  fi
+done
+  done
+IFS=$as_save_IFS
+
+fi
+fi
+ac_ct_CC=$ac_cv_prog_ac_ct_CC
+if test -n "$ac_ct_CC"; then
+  { $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_ct_CC" >&5
+$as_echo "$ac_ct_CC" >&6; }
+else
+  { $as_echo "$as_me:${as_lineno-$LINENO}: result: no" >&5
+$as_echo "no" >&6; }
+fi
+
+  if test "x$ac_ct_CC" = x; then
+    CC=""
+  else
+    case $cross_compiling:$ac_tool_warned in
+yes:)
+{ $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: using cross tools not prefixed with host triplet" >&5
+$as_echo "$as_me: WARNING: using cross tools not prefixed with host triplet" >&2;}
+ac_tool_warned=yes ;;
+esac
+    CC=$ac_ct_CC
+  fi
+else
+  CC="$ac_cv_prog_CC"
+fi
+
+fi
 
 
 test -z "$CC" && { { $as_echo "$as_me:${as_lineno-$LINENO}: error: in \`$ac_pwd':" >&5
@@ -3967,7 +4259,7 @@ See \`config.log' for more details" "$LINENO" 5; }
 $as_echo "$as_me:${as_lineno-$LINENO}: checking for C compiler version" >&5
 set X $ac_compile
 ac_compiler=$2
-for ac_option in --version -v -V -qversion; do
+for ac_option in --version -v -V -qversion -version; do
   { { ac_try="$ac_compiler $ac_option >&5"
 case "(($ac_try" in
   *\"* | *\`* | *\\*) ac_try_echo=\$ac_try;;
@@ -4353,8 +4645,420 @@ else
     CFLAGS=
   fi
 fi
-{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for $CC option to accept ISO C89" >&5
-$as_echo_n "checking for $CC option to accept ISO C89... " >&6; }
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for $CC option to enable C11 features" >&5
+$as_echo_n "checking for $CC option to enable C11 features... " >&6; }
+if ${ac_cv_prog_cc_c11+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  ac_cv_prog_cc_c11=no
+ac_save_CC=$CC
+cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+/* end confdefs.h.  */
+#include <stdarg.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdlib.h>
+#include <wchar.h>
+#include <stdio.h>
+
+// Check varargs macros.  These examples are taken from C99 6.10.3.5.
+#define debug(...) fprintf (stderr, __VA_ARGS__)
+#define showlist(...) puts (#__VA_ARGS__)
+#define report(test,...) ((test) ? puts (#test) : printf (__VA_ARGS__))
+static void
+test_varargs_macros (void)
+{
+  int x = 1234;
+  int y = 5678;
+  debug ("Flag");
+  debug ("X = %d\n", x);
+  showlist (The first, second, and third items.);
+  report (x>y, "x is %d but y is %d", x, y);
+}
+
+// Check long long types.
+#define BIG64 18446744073709551615ull
+#define BIG32 4294967295ul
+#define BIG_OK (BIG64 / BIG32 == 4294967297ull && BIG64 % BIG32 == 0)
+#if !BIG_OK
+  your preprocessor is broken;
+#endif
+#if BIG_OK
+#else
+  your preprocessor is broken;
+#endif
+static long long int bignum = -9223372036854775807LL;
+static unsigned long long int ubignum = BIG64;
+
+struct incomplete_array
+{
+  int datasize;
+  double data[];
+};
+
+struct named_init {
+  int number;
+  const wchar_t *name;
+  double average;
+};
+
+typedef const char *ccp;
+
+static inline int
+test_restrict (ccp restrict text)
+{
+  // See if C++-style comments work.
+  // Iterate through items via the restricted pointer.
+  // Also check for declarations in for loops.
+  for (unsigned int i = 0; *(text+i) != '\0'; ++i)
+    continue;
+  return 0;
+}
+
+// Check varargs and va_copy.
+static bool
+test_varargs (const char *format, ...)
+{
+  va_list args;
+  va_start (args, format);
+  va_list args_copy;
+  va_copy (args_copy, args);
+
+  const char *str = "";
+  int number = 0;
+  float fnumber = 0;
+
+  while (*format)
+    {
+      switch (*format++)
+	{
+	case 's': // string
+	  str = va_arg (args_copy, const char *);
+	  break;
+	case 'd': // int
+	  number = va_arg (args_copy, int);
+	  break;
+	case 'f': // float
+	  fnumber = va_arg (args_copy, double);
+	  break;
+	default:
+	  break;
+	}
+    }
+  va_end (args_copy);
+  va_end (args);
+
+  return *str && number && fnumber;
+}
+// Check _Alignas.
+char _Alignas (double) aligned_as_double;
+char _Alignas (0) no_special_alignment;
+extern char aligned_as_int;
+char _Alignas (0) _Alignas (int) aligned_as_int;
+
+// Check _Alignof.
+enum
+{
+  int_alignment = _Alignof (int),
+  int_array_alignment = _Alignof (int[100]),
+  char_alignment = _Alignof (char)
+};
+_Static_assert (0 < -_Alignof (int), "_Alignof is signed");
+
+// Check _Noreturn.
+int _Noreturn does_not_return (void) { for (;;) continue; }
+
+// Check _Static_assert.
+struct test_static_assert
+{
+  int x;
+  _Static_assert (sizeof (int) <= sizeof (long int),
+                  "_Static_assert does not work in struct");
+  long int y;
+};
+
+// Check UTF-8 literals.
+#define u8 syntax error!
+char const utf8_literal[] = u8"happens to be ASCII" "another string";
+
+// Check duplicate typedefs.
+typedef long *long_ptr;
+typedef long int *long_ptr;
+typedef long_ptr long_ptr;
+
+// Anonymous structures and unions -- taken from C11 6.7.2.1 Example 1.
+struct anonymous
+{
+  union {
+    struct { int i; int j; };
+    struct { int k; long int l; } w;
+  };
+  int m;
+} v1;
+
+int
+main ()
+{
+
+  // Check bool.
+  _Bool success = false;
+
+  // Check restrict.
+  if (test_restrict ("String literal") == 0)
+    success = true;
+  char *restrict newvar = "Another string";
+
+  // Check varargs.
+  success &= test_varargs ("s, d' f .", "string", 65, 34.234);
+  test_varargs_macros ();
+
+  // Check flexible array members.
+  struct incomplete_array *ia =
+    malloc (sizeof (struct incomplete_array) + (sizeof (double) * 10));
+  ia->datasize = 10;
+  for (int i = 0; i < ia->datasize; ++i)
+    ia->data[i] = i * 1.234;
+
+  // Check named initializers.
+  struct named_init ni = {
+    .number = 34,
+    .name = L"Test wide string",
+    .average = 543.34343,
+  };
+
+  ni.number = 58;
+
+  int dynamic_array[ni.number];
+  dynamic_array[ni.number - 1] = 543;
+
+  // work around unused variable warnings
+  return (!success || bignum == 0LL || ubignum == 0uLL || newvar[0] == 'x'
+	  || dynamic_array[ni.number - 1] != 543);
+
+  v1.i = 2;
+  v1.w.k = 5;
+  _Static_assert ((offsetof (struct anonymous, i)
+		   == offsetof (struct anonymous, w.k)),
+		  "Anonymous union alignment botch");
+
+  ;
+  return 0;
+}
+_ACEOF
+for ac_arg in '' -std=gnu11
+do
+  CC="$ac_save_CC $ac_arg"
+  if ac_fn_c_try_compile "$LINENO"; then :
+  ac_cv_prog_cc_c11=$ac_arg
+fi
+rm -f core conftest.err conftest.$ac_objext
+  test "x$ac_cv_prog_cc_c11" != "xno" && break
+done
+rm -f conftest.$ac_ext
+CC=$ac_save_CC
+
+fi
+# AC_CACHE_VAL
+ac_prog_cc_stdc_options=
+case "x$ac_cv_prog_cc_c11" in
+  x)
+    { $as_echo "$as_me:${as_lineno-$LINENO}: result: none needed" >&5
+$as_echo "none needed" >&6; } ;;
+  xno)
+    { $as_echo "$as_me:${as_lineno-$LINENO}: result: unsupported" >&5
+$as_echo "unsupported" >&6; } ;;
+  *)
+    ac_prog_cc_stdc_options=" $ac_cv_prog_cc_c11"
+    CC=$CC$ac_prog_cc_stdc_options
+    { $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_prog_cc_c11" >&5
+$as_echo "$ac_cv_prog_cc_c11" >&6; } ;;
+esac
+if test "x$ac_cv_prog_cc_c11" != xno; then :
+  ac_prog_cc_stdc=c11
+		 ac_cv_prog_cc_stdc=$ac_cv_prog_cc_c11
+else
+  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for $CC option to enable C99 features" >&5
+$as_echo_n "checking for $CC option to enable C99 features... " >&6; }
+if ${ac_cv_prog_cc_c99+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  ac_cv_prog_cc_c99=no
+ac_save_CC=$CC
+cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+/* end confdefs.h.  */
+#include <stdarg.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdlib.h>
+#include <wchar.h>
+#include <stdio.h>
+
+// Check varargs macros.  These examples are taken from C99 6.10.3.5.
+#define debug(...) fprintf (stderr, __VA_ARGS__)
+#define showlist(...) puts (#__VA_ARGS__)
+#define report(test,...) ((test) ? puts (#test) : printf (__VA_ARGS__))
+static void
+test_varargs_macros (void)
+{
+  int x = 1234;
+  int y = 5678;
+  debug ("Flag");
+  debug ("X = %d\n", x);
+  showlist (The first, second, and third items.);
+  report (x>y, "x is %d but y is %d", x, y);
+}
+
+// Check long long types.
+#define BIG64 18446744073709551615ull
+#define BIG32 4294967295ul
+#define BIG_OK (BIG64 / BIG32 == 4294967297ull && BIG64 % BIG32 == 0)
+#if !BIG_OK
+  your preprocessor is broken;
+#endif
+#if BIG_OK
+#else
+  your preprocessor is broken;
+#endif
+static long long int bignum = -9223372036854775807LL;
+static unsigned long long int ubignum = BIG64;
+
+struct incomplete_array
+{
+  int datasize;
+  double data[];
+};
+
+struct named_init {
+  int number;
+  const wchar_t *name;
+  double average;
+};
+
+typedef const char *ccp;
+
+static inline int
+test_restrict (ccp restrict text)
+{
+  // See if C++-style comments work.
+  // Iterate through items via the restricted pointer.
+  // Also check for declarations in for loops.
+  for (unsigned int i = 0; *(text+i) != '\0'; ++i)
+    continue;
+  return 0;
+}
+
+// Check varargs and va_copy.
+static bool
+test_varargs (const char *format, ...)
+{
+  va_list args;
+  va_start (args, format);
+  va_list args_copy;
+  va_copy (args_copy, args);
+
+  const char *str = "";
+  int number = 0;
+  float fnumber = 0;
+
+  while (*format)
+    {
+      switch (*format++)
+	{
+	case 's': // string
+	  str = va_arg (args_copy, const char *);
+	  break;
+	case 'd': // int
+	  number = va_arg (args_copy, int);
+	  break;
+	case 'f': // float
+	  fnumber = va_arg (args_copy, double);
+	  break;
+	default:
+	  break;
+	}
+    }
+  va_end (args_copy);
+  va_end (args);
+
+  return *str && number && fnumber;
+}
+int
+main ()
+{
+
+  // Check bool.
+  _Bool success = false;
+
+  // Check restrict.
+  if (test_restrict ("String literal") == 0)
+    success = true;
+  char *restrict newvar = "Another string";
+
+  // Check varargs.
+  success &= test_varargs ("s, d' f .", "string", 65, 34.234);
+  test_varargs_macros ();
+
+  // Check flexible array members.
+  struct incomplete_array *ia =
+    malloc (sizeof (struct incomplete_array) + (sizeof (double) * 10));
+  ia->datasize = 10;
+  for (int i = 0; i < ia->datasize; ++i)
+    ia->data[i] = i * 1.234;
+
+  // Check named initializers.
+  struct named_init ni = {
+    .number = 34,
+    .name = L"Test wide string",
+    .average = 543.34343,
+  };
+
+  ni.number = 58;
+
+  int dynamic_array[ni.number];
+  dynamic_array[ni.number - 1] = 543;
+
+  // work around unused variable warnings
+  return (!success || bignum == 0LL || ubignum == 0uLL || newvar[0] == 'x'
+	  || dynamic_array[ni.number - 1] != 543);
+
+  ;
+  return 0;
+}
+_ACEOF
+for ac_arg in '' -std=gnu99 -std=c99 -c99 -AC99 -D_STDC_C99= -qlanglvl=extc1x -qlanglvl=extc99
+do
+  CC="$ac_save_CC $ac_arg"
+  if ac_fn_c_try_compile "$LINENO"; then :
+  ac_cv_prog_cc_c99=$ac_arg
+fi
+rm -f core conftest.err conftest.$ac_objext
+  test "x$ac_cv_prog_cc_c99" != "xno" && break
+done
+rm -f conftest.$ac_ext
+CC=$ac_save_CC
+
+fi
+# AC_CACHE_VAL
+ac_prog_cc_stdc_options=
+case "x$ac_cv_prog_cc_c99" in
+  x)
+    { $as_echo "$as_me:${as_lineno-$LINENO}: result: none needed" >&5
+$as_echo "none needed" >&6; } ;;
+  xno)
+    { $as_echo "$as_me:${as_lineno-$LINENO}: result: unsupported" >&5
+$as_echo "unsupported" >&6; } ;;
+  *)
+    ac_prog_cc_stdc_options=" $ac_cv_prog_cc_c99"
+    CC=$CC$ac_prog_cc_stdc_options
+    { $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_prog_cc_c99" >&5
+$as_echo "$ac_cv_prog_cc_c99" >&6; } ;;
+esac
+if test "x$ac_cv_prog_cc_c99" != xno; then :
+  ac_prog_cc_stdc=c99
+		    ac_cv_prog_cc_stdc=$ac_cv_prog_cc_c99
+else
+  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for $CC option to enable C89 features" >&5
+$as_echo_n "checking for $CC option to enable C89 features... " >&6; }
 if ${ac_cv_prog_cc_c89+:} false; then :
   $as_echo_n "(cached) " >&6
 else
@@ -4427,6 +5131,7 @@ CC=$ac_save_CC
 
 fi
 # AC_CACHE_VAL
+ac_prog_cc_stdc_options=
 case "x$ac_cv_prog_cc_c89" in
   x)
     { $as_echo "$as_me:${as_lineno-$LINENO}: result: none needed" >&5
@@ -4435,78 +5140,28 @@ $as_echo "none needed" >&6; } ;;
     { $as_echo "$as_me:${as_lineno-$LINENO}: result: unsupported" >&5
 $as_echo "unsupported" >&6; } ;;
   *)
-    CC="$CC $ac_cv_prog_cc_c89"
+    ac_prog_cc_stdc_options=" $ac_cv_prog_cc_c89"
+    CC=$CC$ac_prog_cc_stdc_options
     { $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_prog_cc_c89" >&5
 $as_echo "$ac_cv_prog_cc_c89" >&6; } ;;
 esac
 if test "x$ac_cv_prog_cc_c89" != xno; then :
-
-fi
-
-ac_ext=c
-ac_cpp='$CPP $CPPFLAGS'
-ac_compile='$CC -c $CFLAGS $CPPFLAGS conftest.$ac_ext >&5'
-ac_link='$CC -o conftest$ac_exeext $CFLAGS $CPPFLAGS $LDFLAGS conftest.$ac_ext $LIBS >&5'
-ac_compiler_gnu=$ac_cv_c_compiler_gnu
-
-ac_ext=c
-ac_cpp='$CPP $CPPFLAGS'
-ac_compile='$CC -c $CFLAGS $CPPFLAGS conftest.$ac_ext >&5'
-ac_link='$CC -o conftest$ac_exeext $CFLAGS $CPPFLAGS $LDFLAGS conftest.$ac_ext $LIBS >&5'
-ac_compiler_gnu=$ac_cv_c_compiler_gnu
-{ $as_echo "$as_me:${as_lineno-$LINENO}: checking whether $CC understands -c and -o together" >&5
-$as_echo_n "checking whether $CC understands -c and -o together... " >&6; }
-if ${am_cv_prog_cc_c_o+:} false; then :
-  $as_echo_n "(cached) " >&6
+  ac_prog_cc_stdc=c89
+		       ac_cv_prog_cc_stdc=$ac_cv_prog_cc_c89
 else
-  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
-/* end confdefs.h.  */
-
-int
-main ()
-{
-
-  ;
-  return 0;
-}
-_ACEOF
-  # Make sure it works both with $CC and with simple cc.
-  # Following AC_PROG_CC_C_O, we do the test twice because some
-  # compilers refuse to overwrite an existing .o file with -o,
-  # though they will create one.
-  am_cv_prog_cc_c_o=yes
-  for am_i in 1 2; do
-    if { echo "$as_me:$LINENO: $CC -c conftest.$ac_ext -o conftest2.$ac_objext" >&5
-   ($CC -c conftest.$ac_ext -o conftest2.$ac_objext) >&5 2>&5
-   ac_status=$?
-   echo "$as_me:$LINENO: \$? = $ac_status" >&5
-   (exit $ac_status); } \
-         && test -f conftest2.$ac_objext; then
-      : OK
-    else
-      am_cv_prog_cc_c_o=no
-      break
-    fi
-  done
-  rm -f core conftest*
-  unset am_i
+  ac_prog_cc_stdc=no
+		       ac_cv_prog_cc_stdc=no
 fi
-{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $am_cv_prog_cc_c_o" >&5
-$as_echo "$am_cv_prog_cc_c_o" >&6; }
-if test "$am_cv_prog_cc_c_o" != yes; then
-   # Losing compiler, so override with the script.
-   # FIXME: It is wrong to rewrite CC.
-   # But if we don't then we get into trouble of one sort or another.
-   # A longer-term fix would be to have automake use am__CC in this case,
-   # and then we could set am__CC="\$(top_srcdir)/compile \$(CC)"
-   CC="$am_aux_dir/compile $CC"
+
 fi
+
+fi
+
 ac_ext=c
 ac_cpp='$CPP $CPPFLAGS'
 ac_compile='$CC -c $CFLAGS $CPPFLAGS conftest.$ac_ext >&5'
 ac_link='$CC -o conftest$ac_exeext $CFLAGS $CPPFLAGS $LDFLAGS conftest.$ac_ext $LIBS >&5'
 ac_compiler_gnu=$ac_cv_c_compiler_gnu
-
 
 
   { $as_echo "$as_me:${as_lineno-$LINENO}: checking whether the compiler is clang" >&5
@@ -4709,182 +5364,6 @@ else
   am__fastdepCC_FALSE=
 fi
 
-
-   { $as_echo "$as_me:${as_lineno-$LINENO}: checking for $CC option to accept ISO C99" >&5
-$as_echo_n "checking for $CC option to accept ISO C99... " >&6; }
-if ${ac_cv_prog_cc_c99+:} false; then :
-  $as_echo_n "(cached) " >&6
-else
-  ac_cv_prog_cc_c99=no
-ac_save_CC=$CC
-cat confdefs.h - <<_ACEOF >conftest.$ac_ext
-/* end confdefs.h.  */
-#include <stdarg.h>
-#include <stdbool.h>
-#include <stdlib.h>
-#include <wchar.h>
-#include <stdio.h>
-
-// Check varargs macros.  These examples are taken from C99 6.10.3.5.
-#define debug(...) fprintf (stderr, __VA_ARGS__)
-#define showlist(...) puts (#__VA_ARGS__)
-#define report(test,...) ((test) ? puts (#test) : printf (__VA_ARGS__))
-static void
-test_varargs_macros (void)
-{
-  int x = 1234;
-  int y = 5678;
-  debug ("Flag");
-  debug ("X = %d\n", x);
-  showlist (The first, second, and third items.);
-  report (x>y, "x is %d but y is %d", x, y);
-}
-
-// Check long long types.
-#define BIG64 18446744073709551615ull
-#define BIG32 4294967295ul
-#define BIG_OK (BIG64 / BIG32 == 4294967297ull && BIG64 % BIG32 == 0)
-#if !BIG_OK
-  your preprocessor is broken;
-#endif
-#if BIG_OK
-#else
-  your preprocessor is broken;
-#endif
-static long long int bignum = -9223372036854775807LL;
-static unsigned long long int ubignum = BIG64;
-
-struct incomplete_array
-{
-  int datasize;
-  double data[];
-};
-
-struct named_init {
-  int number;
-  const wchar_t *name;
-  double average;
-};
-
-typedef const char *ccp;
-
-static inline int
-test_restrict (ccp restrict text)
-{
-  // See if C++-style comments work.
-  // Iterate through items via the restricted pointer.
-  // Also check for declarations in for loops.
-  for (unsigned int i = 0; *(text+i) != '\0'; ++i)
-    continue;
-  return 0;
-}
-
-// Check varargs and va_copy.
-static void
-test_varargs (const char *format, ...)
-{
-  va_list args;
-  va_start (args, format);
-  va_list args_copy;
-  va_copy (args_copy, args);
-
-  const char *str;
-  int number;
-  float fnumber;
-
-  while (*format)
-    {
-      switch (*format++)
-	{
-	case 's': // string
-	  str = va_arg (args_copy, const char *);
-	  break;
-	case 'd': // int
-	  number = va_arg (args_copy, int);
-	  break;
-	case 'f': // float
-	  fnumber = va_arg (args_copy, double);
-	  break;
-	default:
-	  break;
-	}
-    }
-  va_end (args_copy);
-  va_end (args);
-}
-
-int
-main ()
-{
-
-  // Check bool.
-  _Bool success = false;
-
-  // Check restrict.
-  if (test_restrict ("String literal") == 0)
-    success = true;
-  char *restrict newvar = "Another string";
-
-  // Check varargs.
-  test_varargs ("s, d' f .", "string", 65, 34.234);
-  test_varargs_macros ();
-
-  // Check flexible array members.
-  struct incomplete_array *ia =
-    malloc (sizeof (struct incomplete_array) + (sizeof (double) * 10));
-  ia->datasize = 10;
-  for (int i = 0; i < ia->datasize; ++i)
-    ia->data[i] = i * 1.234;
-
-  // Check named initializers.
-  struct named_init ni = {
-    .number = 34,
-    .name = L"Test wide string",
-    .average = 543.34343,
-  };
-
-  ni.number = 58;
-
-  int dynamic_array[ni.number];
-  dynamic_array[ni.number - 1] = 543;
-
-  // work around unused variable warnings
-  return (!success || bignum == 0LL || ubignum == 0uLL || newvar[0] == 'x'
-	  || dynamic_array[ni.number - 1] != 543);
-
-  ;
-  return 0;
-}
-_ACEOF
-for ac_arg in '' -std=gnu99 -std=c99 -c99 -AC99 -D_STDC_C99= -qlanglvl=extc99
-do
-  CC="$ac_save_CC $ac_arg"
-  if ac_fn_c_try_compile "$LINENO"; then :
-  ac_cv_prog_cc_c99=$ac_arg
-fi
-rm -f core conftest.err conftest.$ac_objext
-  test "x$ac_cv_prog_cc_c99" != "xno" && break
-done
-rm -f conftest.$ac_ext
-CC=$ac_save_CC
-
-fi
-# AC_CACHE_VAL
-case "x$ac_cv_prog_cc_c99" in
-  x)
-    { $as_echo "$as_me:${as_lineno-$LINENO}: result: none needed" >&5
-$as_echo "none needed" >&6; } ;;
-  xno)
-    { $as_echo "$as_me:${as_lineno-$LINENO}: result: unsupported" >&5
-$as_echo "unsupported" >&6; } ;;
-  *)
-    CC="$CC $ac_cv_prog_cc_c99"
-    { $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_prog_cc_c99" >&5
-$as_echo "$ac_cv_prog_cc_c99" >&6; } ;;
-esac
-if test "x$ac_cv_prog_cc_c99" != xno; then :
-
-fi
 
 
 
@@ -5806,19 +6285,43 @@ fi
 
 
   # Code from module absolute-header:
+  # Code from module c99:
   # Code from module errno:
+  # Code from module errno-tests:
   # Code from module extensions:
+  # Code from module extern-inline:
+  # Code from module fdopen:
+  # Code from module fdopen-tests:
+  # Code from module fgetc-tests:
+  # Code from module fputc-tests:
+  # Code from module fread-tests:
+  # Code from module fwrite-tests:
   # Code from module gen-header:
   # Code from module getdelim:
+  # Code from module getdelim-tests:
   # Code from module getline:
+  # Code from module getline-tests:
   # Code from module include_next:
+  # Code from module msvc-inval:
   # Code from module snippet/arg-nonnull:
   # Code from module snippet/c++defs:
   # Code from module snippet/warn-on-use:
   # Code from module ssize_t:
+  # Code from module std-gnu11:
+  # Code from module stdalign:
+  # Code from module stdalign-tests:
   # Code from module stddef:
+  # Code from module stddef-tests:
   # Code from module stdio:
+  # Code from module stdio-tests:
   # Code from module sys_types:
+  # Code from module sys_types-tests:
+  # Code from module test-framework-sh:
+  # Code from module test-framework-sh-tests:
+  # Code from module unistd:
+  # Code from module unistd-tests:
+  # Code from module verify:
+  # Code from module verify-tests:
 
 
 
@@ -8048,6 +8551,698 @@ $as_echo "$gl_cv_cc_wallow" >&6; }
 
 
 
+    if test -n "$CXX" && test "$CXX" != no; then
+    { $as_echo "$as_me:${as_lineno-$LINENO}: checking for C++ compiler option to allow warnings" >&5
+$as_echo_n "checking for C++ compiler option to allow warnings... " >&6; }
+if ${gl_cv_cxx_wallow+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  rm -f conftest*
+       echo 'int dummy;' > conftest.cc
+       { ac_try='${CXX-c++} $CXXFLAGS $CPPFLAGS -c conftest.cc 2>conftest1.err'
+  { { eval echo "\"\$as_me\":${as_lineno-$LINENO}: \"$ac_try\""; } >&5
+  (eval $ac_try) 2>&5
+  ac_status=$?
+  $as_echo "$as_me:${as_lineno-$LINENO}: \$? = $ac_status" >&5
+  test $ac_status = 0; }; } >/dev/null
+       { ac_try='${CXX-c++} $CXXFLAGS $CPPFLAGS -Wno-error -c conftest.cc 2>conftest2.err'
+  { { eval echo "\"\$as_me\":${as_lineno-$LINENO}: \"$ac_try\""; } >&5
+  (eval $ac_try) 2>&5
+  ac_status=$?
+  $as_echo "$as_me:${as_lineno-$LINENO}: \$? = $ac_status" >&5
+  test $ac_status = 0; }; } >/dev/null
+                                   if test $? = 0 && test `wc -l < conftest1.err` = `wc -l < conftest2.err`; then
+         gl_cv_cxx_wallow='-Wno-error'
+       else
+         gl_cv_cxx_wallow=none
+       fi
+       rm -f conftest*
+
+fi
+{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $gl_cv_cxx_wallow" >&5
+$as_echo "$gl_cv_cxx_wallow" >&6; }
+    case "$gl_cv_cxx_wallow" in
+      none) GL_CXXFLAG_ALLOW_WARNINGS='' ;;
+      *)    GL_CXXFLAG_ALLOW_WARNINGS="$gl_cv_cxx_wallow" ;;
+    esac
+  else
+    GL_CXXFLAG_ALLOW_WARNINGS=''
+  fi
+
+
+
+  { $as_echo "$as_me:${as_lineno-$LINENO}: checking whether ctype.h defines __header_inline" >&5
+$as_echo_n "checking whether ctype.h defines __header_inline... " >&6; }
+if ${gl_cv_have___header_inline+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+/* end confdefs.h.  */
+#include <ctype.h>
+                         #ifndef __header_inline
+                          #error "<ctype.h> does not define __header_inline"
+                         #endif
+
+_ACEOF
+if ac_fn_c_try_cpp "$LINENO"; then :
+  gl_cv_have___header_inline=yes
+else
+  gl_cv_have___header_inline=no
+fi
+rm -f conftest.err conftest.i conftest.$ac_ext
+fi
+{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $gl_cv_have___header_inline" >&5
+$as_echo "$gl_cv_have___header_inline" >&6; }
+  if test "$gl_cv_have___header_inline" = yes; then
+
+$as_echo "#define HAVE___HEADER_INLINE 1" >>confdefs.h
+
+  fi
+
+
+
+
+
+
+
+  if test $ac_cv_func__set_invalid_parameter_handler = yes; then
+    HAVE_MSVC_INVALID_PARAMETER_HANDLER=1
+
+$as_echo "#define HAVE_MSVC_INVALID_PARAMETER_HANDLER 1" >>confdefs.h
+
+  else
+    HAVE_MSVC_INVALID_PARAMETER_HANDLER=0
+  fi
+
+
+gl_mda_defines='
+#if defined _WIN32 && !defined __CYGWIN__
+#define access    _access
+#define chdir     _chdir
+#define chmod     _chmod
+#define close     _close
+#define creat     _creat
+#define dup       _dup
+#define dup2      _dup2
+#define ecvt      _ecvt
+#define execl     _execl
+#define execle    _execle
+#define execlp    _execlp
+#define execv     _execv
+#define execve    _execve
+#define execvp    _execvp
+#define execvpe   _execvpe
+#define fcloseall _fcloseall
+#define fcvt      _fcvt
+#define fdopen    _fdopen
+#define fileno    _fileno
+#define gcvt      _gcvt
+#define getcwd    _getcwd
+#define getpid    _getpid
+#define getw      _getw
+#define isatty    _isatty
+#define j0        _j0
+#define j1        _j1
+#define jn        _jn
+#define lfind     _lfind
+#define lsearch   _lsearch
+#define lseek     _lseek
+#define memccpy   _memccpy
+#define mkdir     _mkdir
+#define mktemp    _mktemp
+#define open      _open
+#define putenv    _putenv
+#define putw      _putw
+#define read      _read
+#define rmdir     _rmdir
+#define strdup    _strdup
+#define swab      _swab
+#define tempnam   _tempnam
+#define tzset     _tzset
+#define umask     _umask
+#define unlink    _unlink
+#define utime     _utime
+#define wcsdup    _wcsdup
+#define write     _write
+#define y0        _y0
+#define y1        _y1
+#define yn        _yn
+#endif
+'
+
+
+    HAVE_CHOWN=1;
+  HAVE_COPY_FILE_RANGE=1;
+  HAVE_DUP3=1;
+  HAVE_EUIDACCESS=1;
+  HAVE_EXECVPE=1;
+  HAVE_FACCESSAT=1;
+  HAVE_FCHDIR=1;
+  HAVE_FCHOWNAT=1;
+  HAVE_FDATASYNC=1;
+  HAVE_FSYNC=1;
+  HAVE_FTRUNCATE=1;
+  HAVE_GETDTABLESIZE=1;
+  HAVE_GETENTROPY=1;
+  HAVE_GETGROUPS=1;
+  HAVE_GETHOSTNAME=1;
+  HAVE_GETLOGIN=1;
+  HAVE_GETPAGESIZE=1;
+  HAVE_GETPASS=1;
+  HAVE_GROUP_MEMBER=1;
+  HAVE_LCHOWN=1;
+  HAVE_LINK=1;
+  HAVE_LINKAT=1;
+  HAVE_PIPE=1;
+  HAVE_PIPE2=1;
+  HAVE_PREAD=1;
+  HAVE_PWRITE=1;
+  HAVE_READLINK=1;
+  HAVE_READLINKAT=1;
+  HAVE_SETHOSTNAME=1;
+  HAVE_SLEEP=1;
+  HAVE_SYMLINK=1;
+  HAVE_SYMLINKAT=1;
+  HAVE_UNLINKAT=1;
+  HAVE_USLEEP=1;
+  HAVE_DECL_ENVIRON=1;
+  HAVE_DECL_EXECVPE=1;
+  HAVE_DECL_FCHDIR=1;
+  HAVE_DECL_FDATASYNC=1;
+  HAVE_DECL_GETDOMAINNAME=1;
+  HAVE_DECL_GETLOGIN=1;
+  HAVE_DECL_GETLOGIN_R=1;
+  HAVE_DECL_GETPAGESIZE=1;
+  HAVE_DECL_GETUSERSHELL=1;
+  HAVE_DECL_SETHOSTNAME=1;
+  HAVE_DECL_TRUNCATE=1;
+  HAVE_DECL_TTYNAME_R=1;
+  HAVE_OS_H=0;
+  HAVE_SYS_PARAM_H=0;
+  REPLACE_ACCESS=0;
+  REPLACE_CHOWN=0;
+  REPLACE_CLOSE=0;
+  REPLACE_COPY_FILE_RANGE=0;
+  REPLACE_DUP=0;
+  REPLACE_DUP2=0;
+  REPLACE_EXECL=0;
+  REPLACE_EXECLE=0;
+  REPLACE_EXECLP=0;
+  REPLACE_EXECV=0;
+  REPLACE_EXECVE=0;
+  REPLACE_EXECVP=0;
+  REPLACE_EXECVPE=0;
+  REPLACE_FACCESSAT=0;
+  REPLACE_FCHOWNAT=0;
+  REPLACE_FTRUNCATE=0;
+  REPLACE_GETCWD=0;
+  REPLACE_GETDOMAINNAME=0;
+  REPLACE_GETDTABLESIZE=0;
+  REPLACE_GETLOGIN_R=0;
+  REPLACE_GETGROUPS=0;
+  REPLACE_GETPAGESIZE=0;
+  REPLACE_GETPASS=0;
+  REPLACE_GETPASS_FOR_GETPASS_GNU=0;
+  REPLACE_ISATTY=0;
+  REPLACE_LCHOWN=0;
+  REPLACE_LINK=0;
+  REPLACE_LINKAT=0;
+  REPLACE_LSEEK=0;
+  REPLACE_PREAD=0;
+  REPLACE_PWRITE=0;
+  REPLACE_READ=0;
+  REPLACE_READLINK=0;
+  REPLACE_READLINKAT=0;
+  REPLACE_RMDIR=0;
+  REPLACE_SLEEP=0;
+  REPLACE_SYMLINK=0;
+  REPLACE_SYMLINKAT=0;
+  REPLACE_TRUNCATE=0;
+  REPLACE_TTYNAME_R=0;
+  REPLACE_UNLINK=0;
+  REPLACE_UNLINKAT=0;
+  REPLACE_USLEEP=0;
+  REPLACE_WRITE=0;
+  UNISTD_H_HAVE_SYS_RANDOM_H=0;
+  UNISTD_H_HAVE_WINSOCK2_H=0;
+  UNISTD_H_HAVE_WINSOCK2_H_AND_USE_SOCKETS=0;
+
+
+
+
+ac_fn_c_check_decl "$LINENO" "execvpe" "ac_cv_have_decl_execvpe" "$ac_includes_default"
+if test "x$ac_cv_have_decl_execvpe" = xyes; then :
+  ac_have_decl=1
+else
+  ac_have_decl=0
+fi
+
+cat >>confdefs.h <<_ACEOF
+#define HAVE_DECL_EXECVPE $ac_have_decl
+_ACEOF
+
+
+
+
+
+
+
+
+
+
+
+
+
+     if test $gl_cv_have_include_next = yes; then
+       gl_cv_next_unistd_h='<'unistd.h'>'
+     else
+       { $as_echo "$as_me:${as_lineno-$LINENO}: checking absolute name of <unistd.h>" >&5
+$as_echo_n "checking absolute name of <unistd.h>... " >&6; }
+if ${gl_cv_next_unistd_h+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+
+             if test $ac_cv_header_unistd_h = yes; then
+
+
+
+
+  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+/* end confdefs.h.  */
+#include <unistd.h>
+_ACEOF
+                case "$host_os" in
+    aix*) gl_absname_cpp="$ac_cpp -C" ;;
+    *)    gl_absname_cpp="$ac_cpp" ;;
+  esac
+
+  case "$host_os" in
+    mingw*)
+                                          gl_dirsep_regex='[/\\]'
+      ;;
+    *)
+      gl_dirsep_regex='\/'
+      ;;
+  esac
+      gl_make_literal_regex_sed='s,[]$^\\.*/[],\\&,g'
+  gl_header_literal_regex=`echo 'unistd.h' \
+                           | sed -e "$gl_make_literal_regex_sed"`
+  gl_absolute_header_sed="/${gl_dirsep_regex}${gl_header_literal_regex}/"'{
+      s/.*"\(.*'"${gl_dirsep_regex}${gl_header_literal_regex}"'\)".*/\1/
+      s|^/[^/]|//&|
+      p
+      q
+    }'
+
+        gl_cv_absolute_unistd_h=`(eval "$gl_absname_cpp conftest.$ac_ext") 2>&5 |
+  sed -n "$gl_absolute_header_sed"`
+
+          gl_header=$gl_cv_absolute_unistd_h
+          gl_cv_next_unistd_h='"'$gl_header'"'
+          else
+               gl_cv_next_unistd_h='<'unistd.h'>'
+             fi
+
+
+fi
+{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $gl_cv_next_unistd_h" >&5
+$as_echo "$gl_cv_next_unistd_h" >&6; }
+     fi
+     NEXT_UNISTD_H=$gl_cv_next_unistd_h
+
+     if test $gl_cv_have_include_next = yes || test $gl_cv_have_include_next = buggy; then
+       # INCLUDE_NEXT_AS_FIRST_DIRECTIVE='include_next'
+       gl_next_as_first_directive='<'unistd.h'>'
+     else
+       # INCLUDE_NEXT_AS_FIRST_DIRECTIVE='include'
+       gl_next_as_first_directive=$gl_cv_next_unistd_h
+     fi
+     NEXT_AS_FIRST_DIRECTIVE_UNISTD_H=$gl_next_as_first_directive
+
+
+
+
+  if test $ac_cv_header_unistd_h = yes; then
+    HAVE_UNISTD_H=1
+  else
+    HAVE_UNISTD_H=0
+  fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+  if test $ac_cv_have_decl_execvpe = no; then
+    HAVE_DECL_EXECVPE=0
+  fi
+
+
+
+  GL_GNULIB_ACCESS=0
+
+
+
+  GL_GNULIB_CHDIR=0
+
+
+
+  GL_GNULIB_CHOWN=0
+
+
+
+  GL_GNULIB_CLOSE=0
+
+
+
+  GL_GNULIB_COPY_FILE_RANGE=0
+
+
+
+  GL_GNULIB_DUP=0
+
+
+
+  GL_GNULIB_DUP2=0
+
+
+
+  GL_GNULIB_DUP3=0
+
+
+
+  GL_GNULIB_ENVIRON=0
+
+
+
+  GL_GNULIB_EUIDACCESS=0
+
+
+
+  GL_GNULIB_EXECL=0
+
+
+
+  GL_GNULIB_EXECLE=0
+
+
+
+  GL_GNULIB_EXECLP=0
+
+
+
+  GL_GNULIB_EXECV=0
+
+
+
+  GL_GNULIB_EXECVE=0
+
+
+
+  GL_GNULIB_EXECVP=0
+
+
+
+  GL_GNULIB_EXECVPE=0
+
+
+
+  GL_GNULIB_FACCESSAT=0
+
+
+
+  GL_GNULIB_FCHDIR=0
+
+
+
+  GL_GNULIB_FCHOWNAT=0
+
+
+
+  GL_GNULIB_FDATASYNC=0
+
+
+
+  GL_GNULIB_FSYNC=0
+
+
+
+  GL_GNULIB_FTRUNCATE=0
+
+
+
+  GL_GNULIB_GETCWD=0
+
+
+
+  GL_GNULIB_GETDOMAINNAME=0
+
+
+
+  GL_GNULIB_GETDTABLESIZE=0
+
+
+
+  GL_GNULIB_GETENTROPY=0
+
+
+
+  GL_GNULIB_GETGROUPS=0
+
+
+
+  GL_GNULIB_GETHOSTNAME=0
+
+
+
+  GL_GNULIB_GETLOGIN=0
+
+
+
+  GL_GNULIB_GETLOGIN_R=0
+
+
+
+  GL_GNULIB_GETOPT_POSIX=0
+
+
+
+  GL_GNULIB_GETPAGESIZE=0
+
+
+
+  GL_GNULIB_GETPASS=0
+
+
+
+  GL_GNULIB_GETPASS_GNU=0
+
+
+
+  GL_GNULIB_GETUSERSHELL=0
+
+
+
+  GL_GNULIB_GROUP_MEMBER=0
+
+
+
+  GL_GNULIB_ISATTY=0
+
+
+
+  GL_GNULIB_LCHOWN=0
+
+
+
+  GL_GNULIB_LINK=0
+
+
+
+  GL_GNULIB_LINKAT=0
+
+
+
+  GL_GNULIB_LSEEK=0
+
+
+
+  GL_GNULIB_PIPE=0
+
+
+
+  GL_GNULIB_PIPE2=0
+
+
+
+  GL_GNULIB_PREAD=0
+
+
+
+  GL_GNULIB_PWRITE=0
+
+
+
+  GL_GNULIB_READ=0
+
+
+
+  GL_GNULIB_READLINK=0
+
+
+
+  GL_GNULIB_READLINKAT=0
+
+
+
+  GL_GNULIB_RMDIR=0
+
+
+
+  GL_GNULIB_SETHOSTNAME=0
+
+
+
+  GL_GNULIB_SLEEP=0
+
+
+
+  GL_GNULIB_SYMLINK=0
+
+
+
+  GL_GNULIB_SYMLINKAT=0
+
+
+
+  GL_GNULIB_TRUNCATE=0
+
+
+
+  GL_GNULIB_TTYNAME_R=0
+
+
+
+  GL_GNULIB_UNISTD_H_GETOPT=0
+
+
+
+  GL_GNULIB_UNISTD_H_NONBLOCKING=0
+
+
+
+  GL_GNULIB_UNISTD_H_SIGPIPE=0
+
+
+
+  GL_GNULIB_UNLINK=0
+
+
+
+  GL_GNULIB_UNLINKAT=0
+
+
+
+  GL_GNULIB_USLEEP=0
+
+
+
+  GL_GNULIB_WRITE=0
+
+
+
+  GL_GNULIB_MDA_ACCESS=1
+
+
+
+  GL_GNULIB_MDA_CHDIR=1
+
+
+
+  GL_GNULIB_MDA_CLOSE=1
+
+
+
+  GL_GNULIB_MDA_DUP=1
+
+
+
+  GL_GNULIB_MDA_DUP2=1
+
+
+
+  GL_GNULIB_MDA_EXECL=1
+
+
+
+  GL_GNULIB_MDA_EXECLE=1
+
+
+
+  GL_GNULIB_MDA_EXECLP=1
+
+
+
+  GL_GNULIB_MDA_EXECV=1
+
+
+
+  GL_GNULIB_MDA_EXECVE=1
+
+
+
+  GL_GNULIB_MDA_EXECVP=1
+
+
+
+  GL_GNULIB_MDA_EXECVPE=1
+
+
+
+  GL_GNULIB_MDA_GETCWD=1
+
+
+
+  GL_GNULIB_MDA_GETPID=1
+
+
+
+  GL_GNULIB_MDA_ISATTY=1
+
+
+
+  GL_GNULIB_MDA_LSEEK=1
+
+
+
+  GL_GNULIB_MDA_READ=1
+
+
+
+  GL_GNULIB_MDA_RMDIR=1
+
+
+
+  GL_GNULIB_MDA_SWAB=1
+
+
+
+  GL_GNULIB_MDA_UNLINK=1
+
+
+
+  GL_GNULIB_MDA_WRITE=1
+
+
+
+
 
       GL_CFLAG_GNULIB_WARNINGS=''
   if test -n "$GL_CFLAG_ALLOW_WARNINGS"; then
@@ -8979,12 +10174,270 @@ fi
 
 
 
-  gl_source_base='tests'
+
+
+  gl_source_base='tests/gnulib'
   gl_source_base_prefix=
   gltests_WITNESS=IN_`echo "${PACKAGE-$PACKAGE_TARNAME}" | LC_ALL=C tr abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ | LC_ALL=C sed -e 's/[^A-Z0-9_]/_/g'`_GNULIB_TESTS
 
   gl_module_indicator_condition=$gltests_WITNESS
 
+
+
+
+
+
+    if test $HAVE_MSVC_INVALID_PARAMETER_HANDLER = 1; then
+      REPLACE_FDOPEN=1
+    fi
+
+  if test $REPLACE_FDOPEN = 0; then
+        { $as_echo "$as_me:${as_lineno-$LINENO}: checking whether fdopen sets errno" >&5
+$as_echo_n "checking whether fdopen sets errno... " >&6; }
+if ${gl_cv_func_fdopen_works+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+
+        if test "$cross_compiling" = yes; then :
+  case "$host_os" in
+             mingw*) gl_cv_func_fdopen_works="guessing no" ;;
+             *)      gl_cv_func_fdopen_works="guessing yes" ;;
+           esac
+
+else
+  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+/* end confdefs.h.  */
+
+#include <stdio.h>
+#include <errno.h>
+
+
+$gl_mda_defines
+
+int
+main (void)
+{
+  FILE *fp;
+  errno = 0;
+  fp = fdopen (-1, "r");
+  if (fp == NULL && errno == 0)
+    return 1;
+  return 0;
+}
+_ACEOF
+if ac_fn_c_try_run "$LINENO"; then :
+  gl_cv_func_fdopen_works=yes
+else
+  gl_cv_func_fdopen_works=no
+fi
+rm -f core *.core core.conftest.* gmon.out bb.out conftest$ac_exeext \
+  conftest.$ac_objext conftest.beam conftest.$ac_ext
+fi
+
+
+fi
+{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $gl_cv_func_fdopen_works" >&5
+$as_echo "$gl_cv_func_fdopen_works" >&6; }
+    case "$gl_cv_func_fdopen_works" in
+      *no) REPLACE_FDOPEN=1 ;;
+    esac
+  fi
+
+
+     if test $REPLACE_FDOPEN = 1; then
+  GL_COND_OBJ_FDOPEN_TRUE=
+  GL_COND_OBJ_FDOPEN_FALSE='#'
+else
+  GL_COND_OBJ_FDOPEN_TRUE='#'
+  GL_COND_OBJ_FDOPEN_FALSE=
+fi
+:
+    if test -z "${GL_COND_OBJ_FDOPEN_TRUE}" && test -z "${GL_COND_OBJ_FDOPEN_FALSE}"; then
+    GL_COND_OBJ_FDOPEN_TRUE='#'
+    GL_COND_OBJ_FDOPEN_FALSE='#'
+  fi
+
+  if test -z "$GL_COND_OBJ_FDOPEN_TRUE"; then :
+
+
+
+fi
+
+
+
+
+
+
+
+
+
+    if test "$GL_GNULIB_FDOPEN" != 1; then
+        if test "$GL_GNULIB_FDOPEN" = 0; then
+      GL_GNULIB_FDOPEN=$gl_module_indicator_condition
+    else
+      GL_GNULIB_FDOPEN="($GL_GNULIB_FDOPEN || $gl_module_indicator_condition)"
+    fi
+  fi
+
+
+
+
+
+$as_echo "#define GNULIB_TEST_FDOPEN 1" >>confdefs.h
+
+
+
+
+
+     if test $HAVE_MSVC_INVALID_PARAMETER_HANDLER = 1; then
+  GL_COND_OBJ_MSVC_INVAL_TRUE=
+  GL_COND_OBJ_MSVC_INVAL_FALSE='#'
+else
+  GL_COND_OBJ_MSVC_INVAL_TRUE='#'
+  GL_COND_OBJ_MSVC_INVAL_FALSE=
+fi
+:
+    if test -z "${GL_COND_OBJ_MSVC_INVAL_TRUE}" && test -z "${GL_COND_OBJ_MSVC_INVAL_FALSE}"; then
+    GL_COND_OBJ_MSVC_INVAL_TRUE='#'
+    GL_COND_OBJ_MSVC_INVAL_FALSE='#'
+  fi
+
+
+  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for working stdalign.h" >&5
+$as_echo_n "checking for working stdalign.h... " >&6; }
+if ${gl_cv_header_working_stdalign_h+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+/* end confdefs.h.  */
+#include <stdint.h>
+            #include <stdalign.h>
+            #include <stddef.h>
+
+            /* Test that alignof yields a result consistent with offsetof.
+               This catches GCC bug 52023
+               <https://gcc.gnu.org/bugzilla/show_bug.cgi?id=52023>.  */
+            #ifdef __cplusplus
+               template <class t> struct alignof_helper { char a; t b; };
+            # define ao(type) offsetof (alignof_helper<type>, b)
+            #else
+            # define ao(type) offsetof (struct { char a; type b; }, b)
+            #endif
+            char test_double[ao (double) % _Alignof (double) == 0 ? 1 : -1];
+            char test_long[ao (long int) % _Alignof (long int) == 0 ? 1 : -1];
+            char test_alignof[alignof (double) == _Alignof (double) ? 1 : -1];
+
+            /* Test _Alignas only on platforms where gnulib can help.  */
+            #if \
+                ((defined __cplusplus && 201103 <= __cplusplus) \
+                 || (__TINYC__ && defined __attribute__) \
+                 || (defined __APPLE__ && defined __MACH__ \
+                     ? 4 < __GNUC__ + (1 <= __GNUC_MINOR__) \
+                     : __GNUC__) \
+                 || (__ia64 && (61200 <= __HP_cc || 61200 <= __HP_aCC)) \
+                 || __ICC || 0x590 <= __SUNPRO_C || 0x0600 <= __xlC__ \
+                 || 1300 <= _MSC_VER)
+              struct alignas_test { char c; char alignas (8) alignas_8; };
+              char test_alignas[offsetof (struct alignas_test, alignas_8) == 8
+                                ? 1 : -1];
+            #endif
+
+int
+main ()
+{
+
+  ;
+  return 0;
+}
+_ACEOF
+if ac_fn_c_try_compile "$LINENO"; then :
+  gl_cv_header_working_stdalign_h=yes
+else
+  gl_cv_header_working_stdalign_h=no
+fi
+rm -f core conftest.err conftest.$ac_objext conftest.$ac_ext
+fi
+{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $gl_cv_header_working_stdalign_h" >&5
+$as_echo "$gl_cv_header_working_stdalign_h" >&6; }
+
+  if test $gl_cv_header_working_stdalign_h = yes; then
+    GL_GENERATE_STDALIGN_H=false
+  else
+    GL_GENERATE_STDALIGN_H=true
+  fi
+
+
+
+
+
+  case "$GL_GENERATE_STDALIGN_H" in
+    false) STDALIGN_H='' ;;
+    true)
+                  if test -z "$STDALIGN_H"; then
+        STDALIGN_H="${gl_source_base_prefix}stdalign.h"
+      fi
+      ;;
+    *) echo "*** GL_GENERATE_STDALIGN_H is not set correctly" 1>&2; exit 1 ;;
+  esac
+
+
+     if $GL_GENERATE_STDALIGN_H; then
+  GL_GENERATE_STDALIGN_H_TRUE=
+  GL_GENERATE_STDALIGN_H_FALSE='#'
+else
+  GL_GENERATE_STDALIGN_H_TRUE='#'
+  GL_GENERATE_STDALIGN_H_FALSE=
+fi
+:
+    if test -z "${GL_GENERATE_STDALIGN_H_TRUE}" && test -z "${GL_GENERATE_STDALIGN_H_FALSE}"; then
+    GL_GENERATE_STDALIGN_H_TRUE='#'
+    GL_GENERATE_STDALIGN_H_FALSE='#'
+  fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+  gl_gnulib_enabled_dc4606667f1e9e0c2352e4dc23d2d200=false
+  gl_gnulib_enabled_219e5afb5d165bdce602a787b2a20d23=false
+  func_gl_gnulib_m4code_dc4606667f1e9e0c2352e4dc23d2d200 ()
+  {
+    if ! $gl_gnulib_enabled_dc4606667f1e9e0c2352e4dc23d2d200; then
+      gl_gnulib_enabled_dc4606667f1e9e0c2352e4dc23d2d200=true
+      func_gl_gnulib_m4code_errno
+    fi
+  }
+  func_gl_gnulib_m4code_219e5afb5d165bdce602a787b2a20d23 ()
+  {
+    if ! $gl_gnulib_enabled_219e5afb5d165bdce602a787b2a20d23; then
+      gl_gnulib_enabled_219e5afb5d165bdce602a787b2a20d23=true
+      func_gl_gnulib_m4code_getdelim
+    fi
+  }
+
+   if $gl_gnulib_enabled_dc4606667f1e9e0c2352e4dc23d2d200; then
+  gl_GNULIB_ENABLED_dc4606667f1e9e0c2352e4dc23d2d200_TRUE=
+  gl_GNULIB_ENABLED_dc4606667f1e9e0c2352e4dc23d2d200_FALSE='#'
+else
+  gl_GNULIB_ENABLED_dc4606667f1e9e0c2352e4dc23d2d200_TRUE='#'
+  gl_GNULIB_ENABLED_dc4606667f1e9e0c2352e4dc23d2d200_FALSE=
+fi
+
+   if $gl_gnulib_enabled_219e5afb5d165bdce602a787b2a20d23; then
+  gl_GNULIB_ENABLED_219e5afb5d165bdce602a787b2a20d23_TRUE=
+  gl_GNULIB_ENABLED_219e5afb5d165bdce602a787b2a20d23_FALSE='#'
+else
+  gl_GNULIB_ENABLED_219e5afb5d165bdce602a787b2a20d23_TRUE='#'
+  gl_GNULIB_ENABLED_219e5afb5d165bdce602a787b2a20d23_FALSE=
+fi
 
 
 
@@ -9001,6 +10454,8 @@ fi
 
   LIBGNU_LTLIBDEPS="$gl_ltlibdeps"
 
+  LIBTESTS_LIBDEPS="$gltests_libdeps"
+
 
 
 APP_CFLAGS=""
@@ -9013,7 +10468,7 @@ APP_LIBS=""
 
 
 
-ac_config_files="$ac_config_files Makefile"
+ac_config_files="$ac_config_files tests/gnulib/Makefile Makefile"
 
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
@@ -9191,6 +10646,14 @@ fi
     gl_LIBOBJDEPS=$gl_libobjdeps
 
 
+if test -z "${gl_GNULIB_ENABLED_dc4606667f1e9e0c2352e4dc23d2d200_TRUE}" && test -z "${gl_GNULIB_ENABLED_dc4606667f1e9e0c2352e4dc23d2d200_FALSE}"; then
+  as_fn_error $? "conditional \"gl_GNULIB_ENABLED_dc4606667f1e9e0c2352e4dc23d2d200\" was never defined.
+Usually this means the macro was only invoked conditionally." "$LINENO" 5
+fi
+if test -z "${gl_GNULIB_ENABLED_219e5afb5d165bdce602a787b2a20d23_TRUE}" && test -z "${gl_GNULIB_ENABLED_219e5afb5d165bdce602a787b2a20d23_FALSE}"; then
+  as_fn_error $? "conditional \"gl_GNULIB_ENABLED_219e5afb5d165bdce602a787b2a20d23\" was never defined.
+Usually this means the macro was only invoked conditionally." "$LINENO" 5
+fi
 
     gltests_libobjs=
     gltests_ltlibobjs=
@@ -9204,11 +10667,11 @@ fi
       sed_dirname4='s,\(.\)/[^/]*$,\1,'
       sed_basename1='s,.*/,,'
       for i in `for i in $gltests_LIBOBJS; do echo "$i"; done | sed -e "$sed_drop_objext" | sort | uniq`; do
-        gltests_libobjs="$gltests_libobjs lib/gnulib/$i.$ac_objext"
-        gltests_ltlibobjs="$gltests_ltlibobjs lib/gnulib/$i.lo"
+        gltests_libobjs="$gltests_libobjs $i.$ac_objext"
+        gltests_ltlibobjs="$gltests_ltlibobjs $i.lo"
         i_dir=`echo "$i" | sed -e "$sed_dirname1" -e "$sed_dirname2" -e "$sed_dirname3" -e "$sed_dirname4"`
         i_base=`echo "$i" | sed -e "$sed_basename1"`
-        gltests_libobjdeps="$gltests_libobjdeps lib/gnulib/$i_dir/\$(DEPDIR)/$i_base.Po"
+        gltests_libobjdeps="$gltests_libobjdeps $i_dir/\$(DEPDIR)/$i_base.Po"
       done
     fi
     gltests_LIBOBJS=$gltests_libobjs
@@ -9818,6 +11281,7 @@ do
     "config.h") CONFIG_HEADERS="$CONFIG_HEADERS config.h" ;;
     "depfiles") CONFIG_COMMANDS="$CONFIG_COMMANDS depfiles" ;;
     "lib/getopt.h") CONFIG_LINKS="$CONFIG_LINKS lib/getopt.h:lib/gnugetopt.h" ;;
+    "tests/gnulib/Makefile") CONFIG_FILES="$CONFIG_FILES tests/gnulib/Makefile" ;;
     "Makefile") CONFIG_FILES="$CONFIG_FILES Makefile" ;;
 
   *) as_fn_error $? "invalid argument: \`$ac_config_target'" "$LINENO" 5;;

@@ -62,9 +62,12 @@ benchmark:
 
 
 #@# GNUlib stuff
+
 MOSTLYCLEANFILES =
 noinst_LIBRARIES =
 BUILT_SOURCES =
+
 include lib/gnulib/Makefile.gnulib
 
+SUBDIRS = tests/gnulib
 

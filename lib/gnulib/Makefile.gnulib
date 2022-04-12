@@ -27,9 +27,11 @@
 #  --source-base=lib/gnulib \
 #  --m4-base=m4/gnulib \
 #  --doc-base=doc \
-#  --tests-base=tests \
+#  --tests-base=tests/gnulib \
 #  --aux-dir=build-aux \
+#  --with-tests \
 #  --makefile-name=Makefile.gnulib \
+#  --tests-makefile-name=Makefile.am \
 #  --automake-subdir \
 #  --conditional-dependencies \
 #  --no-libtool \

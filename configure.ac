@@ -200,6 +200,6 @@ dnl ================
 AC_SUBST(ALL_PKG_CFLAGS)
 AC_SUBST(ALL_PKG_LIBS)
 
-AC_CONFIG_FILES([Makefile])
+AC_CONFIG_FILES([tests/gnulib/Makefile Makefile])
 AC_OUTPUT
 

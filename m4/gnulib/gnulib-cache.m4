@@ -32,9 +32,11 @@
 #  --source-base=lib/gnulib \
 #  --m4-base=m4/gnulib \
 #  --doc-base=doc \
-#  --tests-base=tests \
+#  --tests-base=tests/gnulib \
 #  --aux-dir=build-aux \
+#  --with-tests \
 #  --makefile-name=Makefile.gnulib \
+#  --tests-makefile-name=Makefile.am \
 #  --automake-subdir \
 #  --conditional-dependencies \
 #  --no-libtool \
@@ -53,9 +55,11 @@ gl_SOURCE_BASE([lib/gnulib])
 gl_M4_BASE([m4/gnulib])
 gl_PO_BASE([])
 gl_DOC_BASE([doc])
-gl_TESTS_BASE([tests])
+gl_TESTS_BASE([tests/gnulib])
+gl_WITH_TESTS
 gl_LIB([libgnu])
 gl_MAKEFILE_NAME([Makefile.gnulib])
+gl_TESTS_MAKEFILE_NAME([Makefile.am])
 gl_AUTOMAKE_SUBDIR
 gl_CONDITIONAL_DEPENDENCIES
 gl_MACRO_PREFIX([gl])

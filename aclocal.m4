@@ -945,23 +945,6 @@ AC_LANG_POP([C])])
 # For backward compatibility.
 AC_DEFUN_ONCE([AM_PROG_CC_C_O], [AC_REQUIRE([AC_PROG_CC])])
 
-# Copyright (C) 2001-2014 Free Software Foundation, Inc.
-#
-# This file is free software; the Free Software Foundation
-# gives unlimited permission to copy and/or distribute it,
-# with or without modifications, as long as this notice is preserved.
-
-# AM_RUN_LOG(COMMAND)
-# -------------------
-# Run COMMAND, save the exit status in ac_status, and log it.
-# (This has been adapted from Autoconf's _AC_RUN_LOG macro.)
-AC_DEFUN([AM_RUN_LOG],
-[{ echo "$as_me:$LINENO: $1" >&AS_MESSAGE_LOG_FD
-   ($1) >&AS_MESSAGE_LOG_FD 2>&AS_MESSAGE_LOG_FD
-   ac_status=$?
-   echo "$as_me:$LINENO: \$? = $ac_status" >&AS_MESSAGE_LOG_FD
-   (exit $ac_status); }])
-
 # Check to make sure that the build environment is sane.    -*- Autoconf -*-
 
 # Copyright (C) 1996-2014 Free Software Foundation, Inc.
@@ -1287,17 +1270,23 @@ m4_include([m4/gnulib/00gnulib.m4])
 m4_include([m4/gnulib/absolute-header.m4])
 m4_include([m4/gnulib/errno_h.m4])
 m4_include([m4/gnulib/extensions.m4])
+m4_include([m4/gnulib/extern-inline.m4])
+m4_include([m4/gnulib/fdopen.m4])
 m4_include([m4/gnulib/getdelim.m4])
 m4_include([m4/gnulib/getline.m4])
 m4_include([m4/gnulib/gnulib-common.m4])
 m4_include([m4/gnulib/gnulib-comp.m4])
 m4_include([m4/gnulib/include_next.m4])
+m4_include([m4/gnulib/msvc-inval.m4])
 m4_include([m4/gnulib/off_t.m4])
 m4_include([m4/gnulib/pid_t.m4])
 m4_include([m4/gnulib/ssize_t.m4])
+m4_include([m4/gnulib/std-gnu11.m4])
+m4_include([m4/gnulib/stdalign.m4])
 m4_include([m4/gnulib/stddef_h.m4])
 m4_include([m4/gnulib/stdio_h.m4])
 m4_include([m4/gnulib/sys_types_h.m4])
+m4_include([m4/gnulib/unistd_h.m4])
 m4_include([m4/gnulib/warn-on-use.m4])
 m4_include([m4/gnulib/wchar_t.m4])
 m4_include([m4/gnulib/zzgnulib.m4])

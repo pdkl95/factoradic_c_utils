@@ -43,19 +43,43 @@ AC_DEFUN([gl_EARLY],
   AC_REQUIRE([gl_PROG_AR_RANLIB])
 
   # Code from module absolute-header:
+  # Code from module c99:
   # Code from module errno:
+  # Code from module errno-tests:
   # Code from module extensions:
+  # Code from module extern-inline:
+  # Code from module fdopen:
+  # Code from module fdopen-tests:
+  # Code from module fgetc-tests:
+  # Code from module fputc-tests:
+  # Code from module fread-tests:
+  # Code from module fwrite-tests:
   # Code from module gen-header:
   # Code from module getdelim:
+  # Code from module getdelim-tests:
   # Code from module getline:
+  # Code from module getline-tests:
   # Code from module include_next:
+  # Code from module msvc-inval:
   # Code from module snippet/arg-nonnull:
   # Code from module snippet/c++defs:
   # Code from module snippet/warn-on-use:
   # Code from module ssize_t:
+  # Code from module std-gnu11:
+  # Code from module stdalign:
+  # Code from module stdalign-tests:
   # Code from module stddef:
+  # Code from module stddef-tests:
   # Code from module stdio:
+  # Code from module stdio-tests:
   # Code from module sys_types:
+  # Code from module sys_types-tests:
+  # Code from module test-framework-sh:
+  # Code from module test-framework-sh-tests:
+  # Code from module unistd:
+  # Code from module unistd-tests:
+  # Code from module verify:
+  # Code from module verify-tests:
 ])
 
 # This macro should be invoked from ./configure.ac, in the section
@@ -207,7 +231,9 @@ changequote([, ])dnl
   m4_pushdef([GL_MACRO_PREFIX], [gltests])
   m4_pushdef([GL_MODULE_INDICATOR_PREFIX], [GL])
   gl_COMMON
-  gl_source_base='tests'
+  AC_REQUIRE([gl_CC_ALLOW_WARNINGS])
+  AC_REQUIRE([gl_CXX_ALLOW_WARNINGS])
+  gl_source_base='tests/gnulib'
   gl_source_base_prefix=
 changequote(,)dnl
   gltests_WITNESS=IN_`echo "${PACKAGE-$PACKAGE_TARNAME}" | LC_ALL=C tr abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ | LC_ALL=C sed -e 's/[^A-Z0-9_]/_/g'`_GNULIB_TESTS
@@ -215,7 +241,41 @@ changequote([, ])dnl
   AC_SUBST([gltests_WITNESS])
   gl_module_indicator_condition=$gltests_WITNESS
   m4_pushdef([gl_MODULE_INDICATOR_CONDITION], [$gl_module_indicator_condition])
+  AC_REQUIRE([gl_EXTERN_INLINE])
+  gl_FUNC_FDOPEN
+  gl_CONDITIONAL([GL_COND_OBJ_FDOPEN], [test $REPLACE_FDOPEN = 1])
+  AM_COND_IF([GL_COND_OBJ_FDOPEN], [
+    gl_PREREQ_FDOPEN
+  ])
+  gl_STDIO_MODULE_INDICATOR([fdopen])
+  AC_REQUIRE([gl_MSVC_INVAL])
+  gl_CONDITIONAL([GL_COND_OBJ_MSVC_INVAL],
+                 [test $HAVE_MSVC_INVALID_PARAMETER_HANDLER = 1])
+  gl_STDALIGN_H
+  gl_CONDITIONAL_HEADER([stdalign.h])
+  AC_PROG_MKDIR_P
+  gl_UNISTD_H
+  gl_UNISTD_H_REQUIRE_DEFAULTS
+  AC_PROG_MKDIR_P
+  gl_gnulib_enabled_dc4606667f1e9e0c2352e4dc23d2d200=false
+  gl_gnulib_enabled_219e5afb5d165bdce602a787b2a20d23=false
+  func_gl_gnulib_m4code_dc4606667f1e9e0c2352e4dc23d2d200 ()
+  {
+    if ! $gl_gnulib_enabled_dc4606667f1e9e0c2352e4dc23d2d200; then
+      gl_gnulib_enabled_dc4606667f1e9e0c2352e4dc23d2d200=true
+      func_gl_gnulib_m4code_errno
+    fi
+  }
+  func_gl_gnulib_m4code_219e5afb5d165bdce602a787b2a20d23 ()
+  {
+    if ! $gl_gnulib_enabled_219e5afb5d165bdce602a787b2a20d23; then
+      gl_gnulib_enabled_219e5afb5d165bdce602a787b2a20d23=true
+      func_gl_gnulib_m4code_getdelim
+    fi
+  }
   m4_pattern_allow([^gl_GNULIB_ENABLED_])
+  AM_CONDITIONAL([gl_GNULIB_ENABLED_dc4606667f1e9e0c2352e4dc23d2d200], [$gl_gnulib_enabled_dc4606667f1e9e0c2352e4dc23d2d200])
+  AM_CONDITIONAL([gl_GNULIB_ENABLED_219e5afb5d165bdce602a787b2a20d23], [$gl_gnulib_enabled_219e5afb5d165bdce602a787b2a20d23])
   m4_popdef([gl_MODULE_INDICATOR_CONDITION])
   m4_ifval(gltests_LIBSOURCES_LIST, [
     m4_syscmd([test ! -d ]m4_defn([gltests_LIBSOURCES_DIR])[ ||
@@ -250,11 +310,11 @@ changequote(,)dnl
       sed_basename1='s,.*/,,'
 changequote([, ])dnl
       for i in `for i in $gltests_LIBOBJS; do echo "$i"; done | sed -e "$sed_drop_objext" | sort | uniq`; do
-        gltests_libobjs="$gltests_libobjs lib/gnulib/$i.$ac_objext"
-        gltests_ltlibobjs="$gltests_ltlibobjs lib/gnulib/$i.lo"
+        gltests_libobjs="$gltests_libobjs $i.$ac_objext"
+        gltests_ltlibobjs="$gltests_ltlibobjs $i.lo"
         i_dir=`echo "$i" | sed -e "$sed_dirname1" -e "$sed_dirname2" -e "$sed_dirname3" -e "$sed_dirname4"`
         i_base=`echo "$i" | sed -e "$sed_basename1"`
-        gltests_libobjdeps="$gltests_libobjdeps lib/gnulib/$i_dir/\$(DEPDIR)/$i_base.Po"
+        gltests_libobjdeps="$gltests_libobjdeps $i_dir/\$(DEPDIR)/$i_base.Po"
       done
     fi
     AC_SUBST([gltests_LIBOBJS], [$gltests_libobjs])
@@ -266,6 +326,8 @@ changequote([, ])dnl
   AC_SUBST([LIBGNU_LIBDEPS])
   LIBGNU_LTLIBDEPS="$gl_ltlibdeps"
   AC_SUBST([LIBGNU_LTLIBDEPS])
+  LIBTESTS_LIBDEPS="$gltests_libdeps"
+  AC_SUBST([LIBTESTS_LIBDEPS])
 ])
 
 # Like AC_LIBOBJ, except that the module name goes
@@ -316,7 +378,7 @@ AC_DEFUN([gltests_REPLACE_FUNCS], [
 AC_DEFUN([gltests_LIBSOURCES], [
   m4_foreach([_gl_NAME], [$1], [
     m4_if(_gl_NAME, [alloca.c], [], [
-      m4_define([gltests_LIBSOURCES_DIR], [tests])
+      m4_define([gltests_LIBSOURCES_DIR], [tests/gnulib])
       m4_append([gltests_LIBSOURCES_LIST], _gl_NAME, [ ])
     ])
   ])
@@ -341,17 +403,53 @@ AC_DEFUN([gl_FILE_LIST], [
   m4/absolute-header.m4
   m4/errno_h.m4
   m4/extensions.m4
+  m4/extern-inline.m4
+  m4/fdopen.m4
   m4/getdelim.m4
   m4/getline.m4
   m4/gnulib-common.m4
   m4/include_next.m4
+  m4/msvc-inval.m4
   m4/off_t.m4
   m4/pid_t.m4
   m4/ssize_t.m4
+  m4/std-gnu11.m4
+  m4/stdalign.m4
   m4/stddef_h.m4
   m4/stdio_h.m4
   m4/sys_types_h.m4
+  m4/unistd_h.m4
   m4/warn-on-use.m4
   m4/wchar_t.m4
   m4/zzgnulib.m4
+  tests/init.sh
+  tests/macros.h
+  tests/signature.h
+  tests/test-errno.c
+  tests/test-fdopen.c
+  tests/test-fgetc.c
+  tests/test-fputc.c
+  tests/test-fread.c
+  tests/test-fwrite.c
+  tests/test-getdelim.c
+  tests/test-getline.c
+  tests/test-init.sh
+  tests/test-stdalign.c
+  tests/test-stddef.c
+  tests/test-stdio.c
+  tests/test-sys_types.c
+  tests/test-unistd.c
+  tests/test-verify-try.c
+  tests/test-verify.c
+  tests/test-verify.sh
+  tests=lib/arg-nonnull.h
+  tests=lib/c++defs.h
+  tests=lib/fdopen.c
+  tests=lib/msvc-inval.c
+  tests=lib/msvc-inval.h
+  tests=lib/stdalign.in.h
+  tests=lib/unistd.c
+  tests=lib/unistd.in.h
+  tests=lib/verify.h
+  tests=lib/warn-on-use.h
 ])
