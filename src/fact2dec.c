@@ -183,11 +183,17 @@ convert_factoradic_string(
         token = strtok(NULL, delimiters);
     }
 
-    for (int i = 0; i < num_places; i++) {
+    // do the special 0th case outside the loop to avoid brsnches
+    mpz_set_ui(fact, (unsigned long int)1);
+    mpz_addmul_ui(total, fact, (unsigned long int)place_values[num_places - 1]);
+
+    // ...and start the loop after the special case
+    for (int i = 1; i < num_places; i++) {
         /* places are in rever-index order */
         int idx = num_places - i - 1;
-        mpz_fac_ui(fact, (unsigned long)i);
-        mpz_addmul_ui(total, fact, (unsigned long)place_values[idx]);
+        // computing the growing factorial as we loop over the places
+        mpz_mul_ui(fact, fact, (unsigned long int)i);
+        mpz_addmul_ui(total, fact, (unsigned long int)place_values[idx]);
     }
 
     mpz_out_str(stdout, 10, total);
