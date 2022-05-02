@@ -90,7 +90,7 @@ parse_args(
             read_from_stdin = true;
             break;
 
-        case 'V':
+        case '.':
             show_version();
             exit(0);
             break;

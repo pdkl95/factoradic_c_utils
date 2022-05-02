@@ -1,0 +1,10 @@
+= 0.1.3 / 2 May 2022
+
+  * [fact2dec] Big speed improvemewnt (~50%). Uasing GMP's factorial function
+    was performing redundant work. Now the factorial is computed in parallel
+    as we walk through the factoradic positions.
+
+  * [benchmark.sh] Added additional SKIP= options "dec2fact" and "fact2dec"
+    that disable benchmarks by conversion type.
+
+  * [minor bug] Fixed the --version option.
