@@ -270,6 +270,10 @@ main(
         }
     }
 
+    if (delimiter) {
+        free(delimiter);
+    }
+
     if (run_ok) {
         return EXIT_SUCCESS;
     } else {

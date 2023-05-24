@@ -275,6 +275,10 @@ main(
         }
     }
 
+    if (delimiters) {
+        free(delimiters);
+    }
+
     if (run_ok) {
         return EXIT_SUCCESS;
     } else {
